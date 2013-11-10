@@ -1,0 +1,1059 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--供装饰器中include的页面使用，body的与此无关（body内的action和struts整合了，不需要）目前只有topper用到-->
+<!--供装饰器中include的页面使用，body的与此无关（body内的action和struts整合了，不需要）目前只有topper用到-->
+	<title>韩国东大门代购_Doreen 10.24日上新_Doreen 长袖女士针织大衣均码不含其它₩129000 - 韩国东大门批发代购</title>
+	<meta name="description" content="韩国东大门代购_Doreen 10.24日上新_Doreen 长袖女士针织大衣均码不含其它₩129000来自壹时尚东大门批发网@DoubleS501的东大门最新单品。"/>
+	<link href="http://dstatic.yissimg.com/themes/front/yiss/css/jqtransform.css" rel="stylesheet" type="text/css" />
+	<link href="http://dstatic.yissimg.com/themes/front/yiss/css/reset.css" rel="stylesheet" type="text/css" />
+	<!--[if lt IE 9]>
+	<link href="http://dstatic.yissimg.com/themes/front/yiss/css/iestyle.css" rel="stylesheet" type="text/css" />
+	<![endif]-->
+	<link href="http://dstatic.yissimg.com/themes/front/yiss/css/yiss.css" rel="stylesheet" type="text/css" />
+	<script src="http://dstatic.yissimg.com/scripts/core/config.js" type="text/javascript"></script>
+	<script type="text/javascript" src="http://dstatic.yissimg.com/scripts/jquery/jquery-1.6.4.js"></script>
+	<script type="text/javascript" src="http://dstatic.yissimg.com/scripts/jquery/plugins/form/jquery.form.js"></script>
+	<script type="text/javascript" src="http://dstatic.yissimg.com/scripts/jquery/external/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://dstatic.yissimg.com/scripts/jquery/jquery.masonry.min.js"></script>
+<script type="text/javascript" src="http://dstatic.yissimg.com/scripts/jquery/jquery.infinitescroll.min.js"></script>
+<script type="text/javascript" src="http://dstatic.yissimg.com/scripts/jquery/jquery.corner.js"></script>
+<script type="text/javascript" src="http://dstatic.yissimg.com/scripts/yiss/common/yiss.js" ></script>
+<script type="text/javascript" src="http://dstatic.yissimg.com/scripts/jquery/jquery.jqtransform.js" ></script>
+
+	<script type="text/javascript" src="http://dstatic.yissimg.com/scripts/i18n/message_zh_CN.js"></script>
+	<script type="text/javascript" src="http://dstatic.yissimg.com/scripts/prototype/prototype.js"></script>
+	<script type="text/javascript">
+		var $j = jQuery.noConflict();
+		var GLOBAL = {};
+		var urlPrefix = "http://dongdamen.yiss.com";
+		GLOBAL.ctxPath="http://dongdamen.yiss.com";	
+	</script>
+	<script src="http://dstatic.yissimg.com/scripts/core/base.js" type="text/javascript"></script>
+	<script src="http://dstatic.yissimg.com/scripts/core/framework.js" type="text/javascript"></script>
+	
+</head>
+<body   >
+<div class="wrapper">
+	<div id="header">
+		<div id="DecTopper">
+<div class="nav_top">
+	<div class="content">
+		<ul id="customerHeader">
+		</ul>
+        <div class="miniCart" id="miniCart">
+        </div>
+	</div>
+</div>
+
+<form name="loginForm" id="loginForm" method="post" action="http://dongdamen.yiss.com/login.html">
+<input type="hidden" name="actionUrl" value="" id="actionUrl"/></form>
+
+<script type="text/javascript">
+function toLogin(){
+	document.loginForm.actionUrl.value = location.href;
+	document.loginForm.submit();
+	return false;
+} 
+</script></div>
+<script src="http://dstatic.yissimg.com/scripts/core/validation.js" type="text/javascript"></script> 
+<script type="text/javascript" src="http://dstatic.yissimg.com/scripts/dwr/engine.js"></script>
+<script type="text/javascript" src="http://dstatic.yissimg.com/scripts/dwr/util.js"></script>
+<script type="text/javascript"	src="http://dongdamen.yiss.com/dwr/interface/matchItemDwr.js"></script>
+<div id="loading-mask" style="left: -2px; top: 0px; width: 1007px; height: 1023px; display: none;"> 
+<p class="loader" id="loading_mask_loader"><img src="http://dimg.yissimg.com/themes/front/default/images/ajax-loader-tr.gif" alt="Loading..."><br>Please wait...</p> 
+</div>
+<div class="head_wrapper">
+  <div class="head"> <h1 id="logo"><a href="/"><img src="http://dimg.yissimg.com/themes/front/yiss/images/dongdamenIndex_10.jpg" border="0" alt="壹时尚东大门批发 dongdamen.yiss.com"/></a></h1>
+    <div class="search">
+     
+     <span id="headMyDiv"></span>
+     <form  action="http://dongdamen.yiss.com/search/styles.html" method="get" id="search_form">
+	     <input name="na" id="search" type="text" class="texxt" value=""/>
+		 <input name="" onclick="$('search_form').submit();return false;" type="image" class="search_btn" src="http://dimg.yissimg.com/themes/front/yiss/images/dongdamenIndex_14.jpg" />
+	 </form>  
+    </div>
+  </div>
+  <div class="nav_main">
+        <div class="navCatalog"> <span class="bg">选款中心</span>
+        <span class="openUp">&nbsp;</span>
+		
+		<ul class="classes" style="display:none;">
+          <li class="classification"> <a href="/trend/newest/kids-clothing.html">童装 Kids</a>
+			<div class="toggleLowerMenu" style="display:none;">
+			  <ul>
+				<li class="title">
+				  <h3>童装 Kids</h3>
+				</li>
+				<li><a href="/trend/newest/parent-child-attire.html">亲子装</a></li>
+				<li><a href="/trend/newest/kids-tops-tees.html">儿童上衣</a></li>
+				<li><a href="/trend/newest/kids-coats-jackets.html">儿童外套</a></li>
+				<li><a href="/trend/newest/girls-skirts-skorts.html">儿童裙子</a></li>
+				<li><a href="/trend/newest/kids-pants-jeans.html">儿童裤子</a></li>
+				<li><a href="/trend/newest/kids-accessories.html">儿童配饰</a></li>
+			  </ul>
+			</div>
+		  </li>
+		  <li><a href="/trend/newest/kids-tops-tees.html">儿童上衣</a> <a href="/trend/newest/kids-pants-jeans.html">儿童裤子</a></li>
+          <li class="classification"><a href="/trend/newest/tops.html">上衣 Tops</a>
+            <div class="toggleLowerMenu" style="display:none;">
+              <ul>
+                <li class="title">
+                  <h3>上衣 Tops</h3>
+                </li>
+				<li><a href="/trend/newest/sweaters.html">针织衫</a></li>
+				<li><a href="/trend/newest/base-shirts.html">打底衫</a></li>
+				<li><a href="/trend/newest/t-shirts.html">T恤</a></li>
+				<li><a href="/trend/newest/hoodies.html">卫衣</a></li>
+				<li><a href="/trend/newest/blouses.html">衬衫</a></li>
+				<li><a href="/trend/newest/camisoles.html">吊带/背心</a></li>
+              </ul>
+            </div>
+          </li>
+		  <li><a href="/trend/newest/sweaters.html">针织衫</a> <a href="/trend/newest/hoodies.html">卫衣</a></li>
+          <li class="classification"><a href="/trend/newest/outerwears.html">外套 Outerwears</a>
+            <div class="toggleLowerMenu" style="display:none;">
+              <ul>
+                <li class="title">
+                  <h3>外套 Outerwears</h3>
+                </li>
+				<li><a href="/trend/newest/jackets.html">夹克</a></li>
+				<li><a href="/trend/newest/windbreakers.html">风衣</a></li>
+				<li><a href="/trend/newest/coats.html">大衣</a></li>
+				<li><a href="/trend/newest/wadded-jackets.html">棉服</a></li>
+				<li><a href="/trend/newest/down-jackets.html">羽绒服</a></li>
+				<li><a href="/trend/newest/suits.html">西装</a></li>
+				<li><a href="/trend/newest/leathers.html">皮衣/皮草</a></li>
+				<li><a href="/trend/newest/vests.html">马甲</a></li>
+              </ul>
+            </div>
+          </li>
+		  <li><a href="/trend/newest/jackets.html">夹克</a> <a href="/trend/newest/coats.html">大衣</a></li>
+          <li class="classification"><a href="/trend/newest/skirts.html">裙子 Skirts</a>
+            <div class="toggleLowerMenu" style="display:none;">
+              <ul>
+                <li class="title">
+                  <h3>裙子 Skirts</h3>
+                </li>
+				<li><a href="/trend/newest/dresses.html">连衣裙</a></li>
+				<li><a href="/trend/newest/mini-skirts.html">短裙</a></li>
+				<li><a href="/trend/newest/bust-skirts.html">半身裙</a></li>
+				<li><a href="/trend/newest/long-skirts.html">长裙</a></li>
+				<li><a href="/trend/newest/formal-dress.html">礼服</a></li>
+              </ul>
+            </div>
+          </li>
+		  <li><a href="/trend/newest/dresses.html">连衣裙</a> <a href="/trend/newest/mini-skirts.html">短裙</a></li>
+          <li class="classification"><a href="/trend/newest/pants.html">裤子 Pants</a>
+            <div class="toggleLowerMenu" style="display:none;">
+              <ul>
+                <li class="title">
+                  <h3>裤子 Pants</h3>
+                </li>
+				<li><a href="/trend/newest/jeans.html">牛仔裤</a></li>
+				<li><a href="/trend/newest/casual-pants.html">休闲裤</a></li>
+				<li><a href="/trend/newest/leggings.html">打底裤</a></li>
+				<li><a href="/trend/newest/dress-pants.html">正装裤</a></li>
+				<li><a href="/trend/newest/shorts.html">短裤</a></li>
+				<li><a href="/trend/newest/culottes.html">裙裤</a></li>
+				<li><a href="/trend/newest/bib-pants.html">背带裤</a></li>
+              </ul>
+            </div>
+          </li>
+		  <li><a href="/trend/newest/jeans.html">牛仔裤</a> <a href="/trend/newest/casual-pants.html">休闲裤</a></li>
+          <li class="none"><a href="/trend/newest/accessories.html">配饰 Accessories</a></li>
+		  <li class="classification"><a href="/trend/newest/mens-clothing.html">男装 Men's</a>
+			<div class="toggleLowerMenu" style="display:none;">
+			  <ul>
+				<li class="title">
+				  <h3>男装 Men's</h3>
+				</li>
+				<li><a href="/trend/newest/mens-tops-tees.html">男士上衣</a></li>
+				<li><a href="/trend/newest/mens-coats-jackets.html">男士外套</a></li>
+				<li><a href="/trend/newest/mens-pants-jeans.html">男士裤子</a></li>
+				<li><a href="/trend/newest/mens-accessories.html">男士配饰</a></li>
+			  </ul>
+			</div>
+		  </li>
+		  <li><a href="/trend/newest/mens-tops-tees.html">男士上衣</a> <a href="/trend/newest/mens-coats-jackets.html">男士外套</a></li>
+        </ul>
+    </div>
+    <ul class="navLinks">
+	  <li class="func">+&nbsp;<span class="to_add"><a href="http://dongdamen.yiss.com/add.html">添加</a></span> </li>
+      <li class="home first"><a href="http://dongdamen.yiss.com/">首页</a></li>
+      <li class="product"><a href="http://dongdamen.yiss.com/trend.html">单品</a></li>
+      <li class="atlas"><a href="http://dongdamen.yiss.com/collection.html">图集</a></li>
+      <li class="freightCard"><a href="http://dongdamen.yiss.com/gift/giftCard.html">充值卡</a></li>
+    </ul>
+	<span class="flag">&nbsp;</span>
+  </div>
+</div>
+<input type="hidden" id="loginFlag" name="loginFlag" value="0"/>
+<script type="text/javascript">
+
+isLogin=false;
+$j.ajax({
+	url: ajax_url+"/customer/headerAjax.html?decorator=null&timeStamp="+new Date().getTime(),
+	dataType: "json",
+	success: function(responseText) {
+		var rJSON=responseText;
+		var urlKey=(!!rJSON.customer.urlKey)?rJSON.customer.urlKey:("people/"+rJSON.customer.customerId);
+		var customerId=rJSON.customer.customerId;
+		var nickname=rJSON.customer.nickname;
+		var headMyDiv="";
+		var customerHeader="";
+		var miniCart="";
+		var numTotal=rJSON.cart.productSize;
+		var subTotal=rJSON.cart.subtotal;
+		isLogin=(!!rJSON.status.login);
+		
+		//topper
+		customerHeader='<li class="noses"><a href="javascript:toLogin()">登录</a></li>';
+		customerHeader+='<li class="noses"><a href="'+ajax_url+'/register.html">注册</a></li>';
+		
+		
+		
+		if(isLogin){
+			//header
+			headMyDiv='<a class="myPage" href="'+ajax_url+'/'+urlKey+'/likes/styles">我的喜欢</a><a class="myPage" href="'+ajax_url+'/'+urlKey+'/collections">我的图集</a><a class="myPage" href="'+ajax_url+'/'+urlKey+'/styles">我的单品</a>';
+			//topper
+			customerHeader='<li class="user_name"><strong>'+nickname+'</strong></li>';
+			customerHeader+='<li class="myses"><a href="javascript:void(0)" class="toggle">消息<span class="icon">&nbsp;</span></a>';
+			customerHeader+='<div class="toggleDiv"><ul class="viewTotal">';
+			customerHeader+='<li class="viewReviewNewCount"><a href="'+ajax_url+'/message/comments.html">查看评论&nbsp;<span class="numc"></span></a></li>';
+			customerHeader+='<li class="viewAtMeNewCount"><a href="'+ajax_url+'/message/mentions.html">查看@我&nbsp;<span class="numc"></span></a></li>';
+			customerHeader+='<li class="viewSysMsgNewCount"><a href="'+ajax_url+'/message/systemMsg.html">查看通知&nbsp;<span class="numc"></span></a></li>';
+			customerHeader+='</ul></div></li>';
+			customerHeader+='<li class="myses"><a href="javascript:void(0)" class="toggle">账号<span class="icon">&nbsp;</span></a>';
+			customerHeader+='<div class="toggleDiv"><ul class="accountSet">';
+			customerHeader+='<li class="my_accountSet"><a href="'+ajax_url+'/customer/accountInfo.html">账户设置</a></li>';
+			customerHeader+='<li class="my_orders"><a href="'+ajax_url+'/customer/myOrderList.html">我的订单</a></li>';
+			customerHeader+='<li class="my_invite"><a href="'+ajax_url+'/customer/customerInvite.html">邀请好友</a></li>';
+			customerHeader+='<li class="my_giftCard"><a href="'+ajax_url+'/customer/gift-card-balance.html">充值卡</a></li>';
+			customerHeader+='</ul></div></li>';
+			customerHeader+='<li class="myses"><a href="'+ajax_url+'/logout.html">退出</a></li>';
+		}
+		//miniCart
+		var tempNm,nums=0;
+		if(numTotal=="0"){
+			tempNm='';
+			miniCart='<div class="miniCartContent empty">';
+			miniCart+='购物车中暂无商品！';
+			miniCart+='<div class="viewCart"><a class="btn" href="'+ajax_url+'/cart/showCart.html"><strong><em></em>查看购物车</strong><span></span></a></div>';
+			miniCart+='</div>';
+		}else{
+			tempNm='<span class="miniCartNum">('+numTotal+')</span>';
+			miniCart='<div class="miniCartContent">';
+			miniCart+='<table border="0" cellspacing="0" cellpadding="0">';
+			var miniCartNum = 5;
+			if(numTotal<5){
+				miniCartNum = numTotal;
+			}
+			for (var m=0;m<miniCartNum;m++){
+				miniCart+='<tr>';
+				miniCart+='<td width="45" valign="top"><a href="'+rJSON.cart.products[m].productHref+'" target="_blank"><img src="'+rJSON.cart.products[m].imgSrc+'" width="45" height="45" border="0" /></a></td>';
+				miniCart+='<td valign="top" align="left" class="title"><a href="'+rJSON.cart.products[m].productHref+'" target="_blank">'+rJSON.cart.products[m].productName+'</a><br/>数量：'+rJSON.cart.products[m].tradeNumber+'</td>';
+				if(rJSON.cart.products[m].isBind==0){
+					miniCart+='<td width="80" valign="top"><span class="price"><span class="offShelf price">已下架</span><span class="totalPrice price" style="display:none;">&nbsp;</span></span></td>';
+				}else{
+					miniCart+='<td width="80" valign="top"><span class="price">'+rJSON.cart.products[m].price+'</span></td>';
+				}
+				miniCart+='</tr>';
+				nums+=parseInt(rJSON.cart.products[m].tradeNumber);
+			}
+			miniCart+='</table>';
+			miniCart+='<div class="total">';
+			if(numTotal>5){
+				miniCart+='<em class="left">剩余'+(numTotal-5)+'种商品未显示</em>';
+			}
+			miniCart+='<em class="right">总金额：<span class="price">'+subTotal+'</span></em></div>';
+			miniCart+='<div class="viewCart"><a href="'+ajax_url+'/cart/showCart.html" class="btn"><strong><em></em>查看购物车</strong><span></span></a></div>';
+			miniCart+='</div>';					
+		}
+		miniCart0='<ul><li><a href="'+ajax_url+'/cart/showCart.html" class="toggle"><em>购物车</em>'+tempNm+'</a><div class="toggleDiv">';
+		miniCart=miniCart0+miniCart+'</div></li></ul>';
+		
+		//add header
+		$j("#headMyDiv").html(headMyDiv);
+		//add topper
+		$j("#customerHeader").html(customerHeader);
+		//add miniCart
+		$j("#miniCart").html(miniCart);
+		
+		$j(".nav_top .toggle").parent().hover(function() {
+				$j(this).find(".toggleDiv").show();
+				$j(".miniCartNum").css("text-decoration","underline");
+			},
+			function() {
+				$j(this).find(".toggleDiv").hide();
+				$j(".miniCartNum").css("text-decoration","none");
+		})
+	}
+})
+	
+
+</script>	</div>
+<form method="post" action="" id="matchItemForm" name="matchItemForm">	<div class="mainOuter">
+	<meta name="description" content="韩国东大门代购_Doreen 10.24日上新_Doreen 长袖女士针织大衣均码不含其它₩129000来自壹时尚东大门批发网@DoubleS501的东大门最新单品。"/>
+<style type="text/css">
+.nav_sec_wrapper {height: 0; overflow: hidden;}
+.nav_main ul.navLinks li.product a {color: #fff!important;}
+.nav_main span.flag {left: 330px;display: block;}
+
+</style>
+
+
+
+
+<div class="nav_sec_wrapper">
+	<ul class="nav_sec">	
+		<li>
+			<a href="http://dongdamen.yiss.com/trend/mens-clothing.html">男装</a>
+			<div class="submenu_wrapper"><span class="flag">&nbsp;</span>
+            	<div class="submenu_bg">&nbsp;</div>
+              	<div class="submenu">
+                <ul>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/mens-coats-jackets.html">男士外套</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/mens-tops-tees.html">男士上衣</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/mens-pants-jeans.html">男士裤子</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/mens-accessories.html">男士配饰</a>
+                </li>
+                </ul>
+				</div>
+			</div>			
+		</li>
+		<li>
+			<a href="http://dongdamen.yiss.com/trend/kids-clothing.html">童装</a>
+			<div class="submenu_wrapper"><span class="flag">&nbsp;</span>
+            	<div class="submenu_bg">&nbsp;</div>
+              	<div class="submenu">
+                <ul>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/parent-child-attire.html">亲子装</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/kids-coats-jackets.html">儿童外套</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/kids-tops-tees.html">儿童上衣</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/girls-skirts-skorts.html">儿童裙子</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/kids-pants-jeans.html">儿童裤子</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/kids-accessories.html">儿童配饰</a>
+                </li>
+                </ul>
+				</div>
+			</div>			
+		</li>
+		<li>
+			<a href="http://dongdamen.yiss.com/trend/outerwears.html">外套</a>
+			<div class="submenu_wrapper"><span class="flag">&nbsp;</span>
+            	<div class="submenu_bg">&nbsp;</div>
+              	<div class="submenu">
+                <ul>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/coats.html">大衣</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/down-jackets.html">羽绒服</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/wadded-jackets.html">棉服</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/windbreakers.html">风衣</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/jackets.html">夹克</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/suits.html">西装</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/leathers.html">皮衣/皮草</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/vests.html">马甲</a>
+                </li>
+                </ul>
+				</div>
+			</div>			
+		</li>
+		<li>
+			<a href="http://dongdamen.yiss.com/trend/tops.html">上衣</a>
+			<div class="submenu_wrapper"><span class="flag">&nbsp;</span>
+            	<div class="submenu_bg">&nbsp;</div>
+              	<div class="submenu">
+                <ul>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/blouses.html">衬衫</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/sweaters.html">针织衫</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/t-shirts.html">T恤</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/hoodies.html">卫衣</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/base-shirts.html">打底衫</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/camisoles.html">吊带/背心</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/pajamas.html">睡衣</a>
+                </li>
+                </ul>
+				</div>
+			</div>			
+		</li>
+		<li>
+			<a href="http://dongdamen.yiss.com/trend/skirts.html">裙子</a>
+			<div class="submenu_wrapper"><span class="flag">&nbsp;</span>
+            	<div class="submenu_bg">&nbsp;</div>
+              	<div class="submenu">
+                <ul>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/dresses.html">连衣裙</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/long-skirts.html">长裙</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/mini-skirts.html">短裙</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/bust-skirts.html">半身裙</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/formal-dress.html">礼服</a>
+                </li>
+                </ul>
+				</div>
+			</div>			
+		</li>
+		<li>
+			<a href="http://dongdamen.yiss.com/trend/pants.html">裤子</a>
+			<div class="submenu_wrapper"><span class="flag">&nbsp;</span>
+            	<div class="submenu_bg">&nbsp;</div>
+              	<div class="submenu">
+                <ul>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/jeans.html">牛仔裤</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/casual-pants.html">休闲裤</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/dress-pants.html">正装裤</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/leggings.html">打底裤</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/shorts.html">短裤</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/culottes.html">裙裤</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/bib-pants.html">背带裤</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/rompers.html">连体裤</a>
+                </li>
+                </ul>
+				</div>
+			</div>			
+		</li>
+		<li>
+			<a href="http://dongdamen.yiss.com/trend/accessories.html">配饰</a>
+			<div class="submenu_wrapper"><span class="flag">&nbsp;</span>
+            	<div class="submenu_bg">&nbsp;</div>
+              	<div class="submenu">
+                <ul>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/shawls.html">披肩</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/hosiery.html">袜子</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/collars.html">假领</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/scarves.html">围巾</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/gloves.html">手套</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/belts.html">腰带</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/necklaces.html">项链</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/brooches.html">胸针</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/hats.html">帽子</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/bracelets.html">手镯/手链</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/earrings.html">耳环</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/hair-accessories.html">头饰</a>
+                </li>
+                <li>
+                	<a href="http://dongdamen.yiss.com/trend/other-accessories.html">其它配件</a>
+                </li>
+                </ul>
+				</div>
+			</div>			
+		</li>
+	</ul>		
+</div>
+<script type="text/javascript">
+/*头部导航展开*/
+$j(document).ready(function() {				
+	var hoverEls = $j(".nav_sec > li");
+	for (var i = 0; i < hoverEls.length; i++) {
+		$j(hoverEls[i]).find(".submenu_bg").height($j(hoverEls[i]).find(".submenu_wrapper").height() - 1); //-1 for ie6
+		$j(hoverEls[i]).find(".submenu_bg").width($j(hoverEls[i]).find(".submenu_wrapper").width());
+		$j(hoverEls[i]).find(".submenu_bg").fadeTo("fast", 0.9);
+	}
+	$j(".nav_sec > li").hover(function() {
+		$j(this).find(".submenu_wrapper").show();		
+	},
+	function() {
+		$j(this).find(".submenu_wrapper").hide();
+	})
+});
+</script>
+<div class="main">
+<input type="hidden" name="key" value="280125" id="key"/><input type="hidden" name="matchRelateId" value="1571921" id="matchRelateId"/><input type="hidden" name="likerId" value="" id="likerId"/><input type="hidden" name="userId" value="" id="userId"/>	
+	
+	<div class="container2">
+		<div id="sidebarRight">
+			<div class="sidebar_article">
+			<div class="collectionInfo">
+				<div class="gatherer">
+					<a target="_blank" class="user_img" href="http://dongdamen.yiss.com/people/6452" title="DoubleS501"><img border="0" src="http://dimage.yissimg.com/photo/ba4359728f9c48e29672ee9827d00245.jpg!small9"></a>					<div>
+<a target="_blank" class="user_name" title="DoubleS501" href="http://dongdamen.yiss.com/people/6452">DoubleS501</a>						<br />
+							通过上传采集于2013-10-14 15:22
+					</div>
+				</div>
+				<!--产品，下面div显示 -->
+				<div class="from">
+					<strong>在哪儿买？</strong>
+					at&nbsp;&nbsp;<a href="http://dongdamen.yiss.com/places/432-Doreen" target="_blank">Doreen</a>&nbsp;&nbsp;
+					<span class="price">745.7 人民币</span>
+					<br />
+				</div>
+              	<div class="synopsis">
+              		<h1 class="brand"></h1>
+              		<h2 class="title">Doreen 长袖女士针织大衣均码不含其它₩129000</h2>
+             	</div>
+			</div>
+            <div class="action">
+	            <ul>
+            		<li class="likeIt"><a href="javascript:toLogin()"><em></em>喜欢&nbsp;&nbsp;+1</a><strong class="likeNum"><span id="likeCount">9</span></strong></li>
+            		<li class="albumJoin"><a href="javascript:toLogin()"><em></em>加入图集</a></li>
+	            
+	            <li class="sharesTo">
+                  <div class="shareBtn"> 
+
+                <script>
+				//页面title
+				var pageTitle=window.document.title;
+				  var param = {
+					url:location.href,
+					title:'发现了这个东大门最新款，很漂亮，分享给你：'+pageTitle, /**分享的文字内容(可选，默认为所在页面的title)*/
+					pic:'http://dimage.yissimg.com/item/2013/1011/20/IMG-0409.jpg!tall.jpg' /**分享图片的路径(可选)*/
+				  }
+				  var temp = [];
+				  for( var p in param ){
+					temp.push(p + '=' + encodeURIComponent( param[p] || '' ) )
+				  }
+				  document.write('<iframe allowTransparency="true" frameborder="0" scrolling="no" src="/sharePost.htm?' + temp.join('&') + '" width=0 height=0" id="sharePostFrame" name="sharePostFrame"></iframe>')
+			  	</script>
+                <ul class="shareSite">
+                  <!--新浪分享-->
+                  <li class="share_sina">新浪微博</li>
+                  <!--腾讯微博转播-->
+                  <li class="share_tencen">腾讯微博</li>
+                  <!--豆瓣推荐-->
+                  <li class="share_douban">豆瓣网</li>
+                  <!--QQ空间分享-->
+                  <li class="share_qq">QQ空间</li>
+                </ul>
+              <script>
+			  $j(function(){
+				$j("#sidebarRight .action li.sharesTo li").bind("click",function(){
+						window.frames["sharePostFrame"].sharePost(this.className)
+				})
+			})
+			</script> 
+
+					</div>
+				<span><em></em>分享给好友</span></li>
+				<li class="keyboardTurnPage">
+	<span id="prepagenum" keyTo="http://dongdamen.yiss.com/styles/1571923.html">上一页</span>&nbsp;<img src="http://dimg.yissimg.com/themes/front/yiss/images/keyTo_01.png" border="0"/>&nbsp;<strong>使用键盘浏览</strong>&nbsp;<img src="http://dimg.yissimg.com/themes/front/yiss/images/keyTo_02.png" border="0"/>&nbsp;<span id="nextpagenum">下一页</span>
+	<script>
+		var keyTime=2000;//限制间隔时间1分钟
+		var iskLock = true;  //定义全局变量，判断是否可以键盘翻页
+		var isInTextarea = false;  //定义全局变量，判断是否光标在输入框内
+		$j(function(){
+			$j("textarea#textarea_reply").bind({
+			  focus: function() {
+				isInTextarea=true;
+			  },
+			  blur: function() {
+				isInTextarea=false;
+			  }
+			});
+		})
+		document.onkeyup = function(event){
+           if(iskLock && !isInTextarea){
+//		   		console.log(000)
+				var isie = document.all ? true : false;
+				var keycode = isie ? window.event.keyCode : event.keyCode;
+				if (0 < $j("#prepagenum").length && keycode == 37) {
+					if(!!$j("#prepagenum").attr("keyTo")){
+//						console.log(1)
+						window.location.href =$j("#prepagenum").attr("keyTo");
+						iskLock = false;
+					}
+				}
+				if (0 <  $j("#nextpagenum").length && keycode == 39) {
+					if(!!$j("#nextpagenum").attr("keyTo")){
+//						console.log(2)
+						window.location.href = $j("#nextpagenum").attr("keyTo");
+						iskLock = false;
+					}
+				}
+				setTimeout(function (){
+				   iskLock = true;
+				},keyTime);//超过定义时间后才可以继续翻页
+		   }
+    
+        };
+		
+  var browser={
+    versions:function(){ 
+           var u = navigator.userAgent, app = navigator.appVersion; 
+           return {//移动终端浏览器版本信息 
+                trident: u.indexOf('Trident') > -1, //IE内核
+                presto: u.indexOf('Presto') > -1, //opera内核
+                webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
+                iPad: u.indexOf('iPad') > -1, //是否iPad
+                webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+            };
+         }(),
+         language:(navigator.browserLanguage || navigator.language).toLowerCase()
+	} 
+	//滑动
+	function slide() {
+		var mDocument = document.getElementById("matchItemForm");
+		var m = Math, 
+			isTouchPad = (/hp-tablet/gi).test(navigator.appVersion), 
+			hasTouch = 'ontouchstart' in window && !isTouchPad,
+			START_EV = hasTouch ? 'touchstart' : 'mousedown',
+			MOVE_EV = hasTouch ? 'touchmove' : 'mousemove',
+			END_EV = hasTouch ? 'touchend' : 'mouseup',
+			CANCEL_EV = hasTouch ? 'touchcancel' : 'mouseup';
+		var pointBeginX=0,pointEndX=0;//移动起始终止位置及方向
+		mDocument.addEventListener(START_EV, function (e) {
+			pointBeginX = hasTouch ? e.touches[0] : e;
+		}, false);
+		mDocument.addEventListener(END_EV, function (e) {
+			pointEndX = hasTouch ? e.changedTouches[0] : e;
+				
+			var tnum=Number(pointBeginX.pageX)-Number(pointEndX.pageX)
+			if (!!$j("#prepagenum").attr("keyTo")) {
+				if(tnum-230>0){//向左滑动，220是预留值
+					window.location.href = $j("#prepagenum").attr("keyTo");
+				}
+			}
+			if (!!$j("#nextpagenum").attr("keyTo")) {
+				if (tnum+230<0){//向左滑动
+					window.location.href = $j("#nextpagenum").attr("keyTo");
+				}
+			}
+
+		}, false);
+	}
+	//判断是否是移动端。
+	var mobileFlag=browser.versions.mobile||browser.versions.ios||browser.versions.android||browser.versions.iPhone||browser.versions.iPad;
+	if(mobileFlag){
+		var prePage=$j("#prepagenum").attr("keyTo");
+		var nextPage=$j("#nextpagenum").attr("keyTo");
+		if (!!prePage) {
+			$j("#prepagenum").bind("click",function(){
+				window.location.href = prePage;
+			})
+		}
+		if (!!nextPage) {
+			$j("#nextpagenum").bind("click",function(){
+				window.location.href = nextPage;
+			})
+		}
+		slide();
+
+	}
+	</script>
+				</li>
+				
+	            </ul>
+            </div>
+<div class="belongsTo">
+	<h5>Doreen 10.24日上新</h5>
+	
+	
+	<span>51/51</span>
+	<div class="clearLine"></div>
+	<a href="			http://dongdamen.yiss.com/boards/29049.html
+" class="squares" target="_blank">
+			<img src="http://dimage.yissimg.com/item/2013/1023/20/IMG-0797.jpg!small9"/>
+			<img src="http://dimage.yissimg.com/item/2013/1023/20/IMG-0794.jpg!small9"/>
+			<img src="http://dimage.yissimg.com/item/2013/1023/20/IMG-0805.jpg!small9"/>
+			<img src="http://dimage.yissimg.com/item/2013/1023/20/IMG-0804.jpg!small9"/>
+			<img src="http://dimage.yissimg.com/item/2013/1023/20/IMG-0798.jpg!small9"/>
+			<img src="http://dimage.yissimg.com/item/2013/1023/20/IMG-0796.jpg!small9"/>
+			<img src="http://dimage.yissimg.com/item/2013/1023/20/IMG-0792.jpg!small9"/>
+			<img src="http://dimage.yissimg.com/item/2013/1023/20/IMG-0817.jpg!small9"/>
+			<img src="http://dimage.yissimg.com/item/2013/1023/20/IMG-0816.jpg!small9"/>
+	</a>
+	
+	
+		<div class="info" id="logsDiv">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		  <tr> 
+		    <td width="60"><div class="head_pic"><a target="_blank" class="user_img" href="http://dongdamen.yiss.com/people/9397" title="sue811202"><img border="0" src="http://dimg.yissimg.com/themes/front/yiss/images/customerIconDefault75.jpg"></a></div></td>
+		    <td valign="middle"><div class="content"><a target="_blank" class="user_name" title="sue811202" href="http://dongdamen.yiss.com/people/9397">sue811202</a>&nbsp;加入到&nbsp;<a href='http://dongdamen.yiss.com/boards/29087.html' target='_blank'>《十月（三）》</a></div></td>
+		  </tr>
+		  <tr> 
+		    <td width="60"><div class="head_pic"><a target="_blank" class="user_img" href="http://dongdamen.yiss.com/people/7706" title="小蘑菇"><img border="0" src="http://dimg.yissimg.com/themes/front/yiss/images/customerIconDefault75.jpg"></a></div></td>
+		    <td valign="middle"><div class="content"><a target="_blank" class="user_name" title="小蘑菇" href="http://dongdamen.yiss.com/people/7706">小蘑菇</a>&nbsp;加入到&nbsp;<a href='http://dongdamen.yiss.com/boards/29114.html' target='_blank'>《10.15》</a></div></td>
+		  </tr>
+		  <tr> 
+		    <td width="60"><div class="head_pic"><a target="_blank" class="user_img" href="http://dongdamen.yiss.com/people/12896" title="告别薇安"><img border="0" src="http://dimg.yissimg.com/themes/front/yiss/images/customerIconDefault75.jpg"></a></div></td>
+		    <td valign="middle"><div class="content"><a target="_blank" class="user_name" title="告别薇安" href="http://dongdamen.yiss.com/people/12896">告别薇安</a>&nbsp;加入到&nbsp;<a href='http://dongdamen.yiss.com/boards/29057.html' target='_blank'>《10.14》</a></div></td>
+		  </tr>
+		  <tr> 
+		    <td width="60"><div class="head_pic"><a target="_blank" class="user_img" href="http://dongdamen.yiss.com/people/15514" title="ChingchingStudio"><img border="0" src="http://dimg.yissimg.com/themes/front/yiss/images/customerIconDefault75.jpg"></a></div></td>
+		    <td valign="middle"><div class="content"><a target="_blank" class="user_name" title="ChingchingStudio" href="http://dongdamen.yiss.com/people/15514">ChingchingStudio</a>&nbsp;加入到&nbsp;<a href='http://dongdamen.yiss.com/boards/26697.html' target='_blank'>《十月》</a></div></td>
+		  </tr>
+		  <tr> 
+		    <td width="60"><div class="head_pic"><a target="_blank" class="user_img" href="http://dongdamen.yiss.com/people/9709" title="爆爆米花"><img border="0" src="http://dimg.yissimg.com/themes/front/yiss/images/customerIconDefault75.jpg"></a></div></td>
+		    <td valign="middle"><div class="content"><a target="_blank" class="user_name" title="爆爆米花" href="http://dongdamen.yiss.com/people/9709">爆爆米花</a>&nbsp;加入到&nbsp;<a href='http://dongdamen.yiss.com/boards/27624.html' target='_blank'>《14》</a></div></td>
+		  </tr>
+		  <tr> 
+		    <td width="60"><div class="head_pic"><a target="_blank" class="user_img" href="http://dongdamen.yiss.com/people/12800" title="moon美衣"><img border="0" src="http://dimg.yissimg.com/themes/front/yiss/images/customerIconDefault75.jpg"></a></div></td>
+		    <td valign="middle"><div class="content"><a target="_blank" class="user_name" title="moon美衣" href="http://dongdamen.yiss.com/people/12800">moon美衣</a>&nbsp;加入到&nbsp;<a href='http://dongdamen.yiss.com/boards/28877.html' target='_blank'>《10月12日》</a></div></td>
+		  </tr>
+		  <tr> 
+		    <td width="60"><div class="head_pic"><a target="_blank" class="user_img" href="http://dongdamen.yiss.com/people/9852" title="deborayin2012"><img border="0" src="http://dimg.yissimg.com/themes/front/yiss/images/customerIconDefault75.jpg"></a></div></td>
+		    <td valign="middle"><div class="content"><a target="_blank" class="user_name" title="deborayin2012" href="http://dongdamen.yiss.com/people/9852">deborayin2012</a>&nbsp;加入到&nbsp;<a href='http://dongdamen.yiss.com/boards/28936.html' target='_blank'>《10月》</a></div></td>
+		  </tr>
+		  <tr> 
+		    <td width="60"><div class="head_pic"><a target="_blank" class="user_img" href="http://dongdamen.yiss.com/people/8590" title="遥遥"><img border="0" src="http://dimage.yissimg.com/photo/8554ec3448fb452f8757b6d1c44fb00f.jpg!small9"></a></div></td>
+		    <td valign="middle"><div class="content"><a target="_blank" class="user_name" title="遥遥" href="http://dongdamen.yiss.com/people/8590">遥遥</a>&nbsp;加入到&nbsp;<a href='http://dongdamen.yiss.com/boards/24788.html' target='_blank'>《0980》</a></div></td>
+		  </tr>
+		  <tr> 
+		    <td width="60"><div class="head_pic"><a target="_blank" class="user_img" href="http://dongdamen.yiss.com/people/13290" title="pinky116"><img border="0" src="http://dimg.yissimg.com/themes/front/yiss/images/customerIconDefault75.jpg"></a></div></td>
+		    <td valign="middle"><div class="content"><a target="_blank" class="user_name" title="pinky116" href="http://dongdamen.yiss.com/people/13290">pinky116</a>&nbsp;加入到&nbsp;<a href='http://dongdamen.yiss.com/boards/29113.html' target='_blank'>《10.14》</a></div></td>
+		  </tr>
+		  <tr> 
+		    <td width="60"><div class="head_pic"><a target="_blank" class="user_img" href="http://dongdamen.yiss.com/people/9395" title="echo_0318"><img border="0" src="http://dimg.yissimg.com/themes/front/yiss/images/customerIconDefault75.jpg"></a></div></td>
+		    <td valign="middle"><div class="content"><a target="_blank" class="user_name" title="echo_0318" href="http://dongdamen.yiss.com/people/9395">echo_0318</a>&nbsp;加入到&nbsp;<a href='http://dongdamen.yiss.com/boards/28571.html' target='_blank'>《1011》</a></div></td>
+		  </tr>
+		  <tr>
+		    <td colspan="2"><div class="more"><strong>+33人</strong> 推荐</div></td>
+		  </tr>
+		</table>
+		</div>
+</div>
+		
+		<h4>相似产品</h4>
+		<ul class="combinations">
+			<li>
+				<a href="http://dongdamen.yiss.com/styles/1926473.html" target="_blank"><img src="http://dimage.yissimg.com/item/2013/1108/10/DSC-0756.jpg!140.jpg" border="0" /></a>
+				<div class="price">248.6 人民币</div>
+			</li>
+			<li>
+				<a href="http://dongdamen.yiss.com/styles/1926462.html" target="_blank"><img src="http://dimage.yissimg.com/item/2013/1108/10/DSC-0354.jpg!140.jpg" border="0" /></a>
+				<div class="price">335.3 人民币</div>
+			</li>
+			<li>
+				<a href="http://dongdamen.yiss.com/styles/1926413.html" target="_blank"><img src="http://dimage.yissimg.com/item/2013/1108/10/DSC-0697.jpg!140.jpg" border="0" /></a>
+				<div class="price">543.4 人民币</div>
+			</li>
+			<li>
+				<a href="http://dongdamen.yiss.com/styles/1926409.html" target="_blank"><img src="http://dimage.yissimg.com/item/2013/1108/10/DSC-0696.jpg!140.jpg" border="0" /></a>
+				<div class="price">566.5 人民币</div>
+			</li>
+			<li>
+				<a href="http://dongdamen.yiss.com/styles/1926408.html" target="_blank"><img src="http://dimage.yissimg.com/item/2013/1108/10/DSC-0694.jpg!140.jpg" border="0" /></a>
+				<div class="price">572.3 人民币</div>
+			</li>
+			<li>
+				<a href="http://dongdamen.yiss.com/styles/1926407.html" target="_blank"><img src="http://dimage.yissimg.com/item/2013/1108/10/DSC-0693.jpg!140.jpg" border="0" /></a>
+				<div class="price">514.5 人民币</div>
+			</li>
+		</ul>
+			</div>
+		</div>
+		<div id="content">
+			<div class="main_content matchItem_view">
+		<div class="viewImg_wrapper">
+			<div class="action">
+									<a id="likeDiv" class="btn likeIt" onclick="javascrpt:toLogin()"><strong><em></em>喜&nbsp;&nbsp;欢</strong><span></span></a>
+					<a class="btn albumJoin" href="javascript:toLogin()"><strong><em></em>加入图集</strong><span></span></a>
+			</div>
+			<img src="http://dimage.yissimg.com/item/2013/1011/20/IMG-0409.jpg!tall.jpg" border="0" /><span class="report"><a href="#">举报</a></span>
+		</div>
+		<script>
+		$j(function(){	
+			$j(".viewImg_wrapper").hover(function(){$j(".action",this).show();},function(){$j(".action",this).hide();})  
+		})
+		</script>
+
+				<div class="article">
+<script language="javascript">
+function showPageAjax(serialNum){
+	$j.ajax({
+		url: "http://dongdamen.yiss.com/front/showPageAjax.html",
+		data:{'serialNum':serialNum,'perNum':20,'hql':'reviewItem','entityName':'matchReview','key':280125},
+		success: function(responseText) {
+			$("pageDiv").innerHTML = responseText;
+		}
+	});
+}
+</script>
+<div class="reply" id="pageDiv">
+
+<h4><span>
+	第一个发布评论
+</span></h4>
+
+<textarea name="reviewContent" id="textarea_reply" class="textarea" onkeyup="sff(this);judgmentL(this,240)" placeholder="添加评论或@给好友"></textarea>
+<div>
+  <a class="btn" href="javascript:void(0)" onclick="toLogin()"><strong><em></em>发&nbsp;布</strong><span></span></a>
+</div>
+
+<div class="list">
+	<ul class="macro_list remess_list" id="remess_list">
+	</ul>
+</div>
+ 
+
+
+</div><script language="javascript">
+function showLikersAjax(serialNum){
+	$j.ajax({
+		url: "http://dongdamen.yiss.com/front/showPageAjax.html",
+		data:{'serialNum':serialNum,'perNum':23,'hql':'likeItem','entityName':'matchLike','key':280125,'flag':'more'},
+		success: function(responseText) {
+			$("likersDiv").innerHTML = responseText;
+		}
+	});
+}
+</script>
+					<div class="people" id="likersDiv">
+
+	<h4>
+		<span>9</span>人喜欢
+	</h4>
+    <div class="latestCollect">
+      <ul>
+        <li>
+            <div class="info">
+            	<div class="head_pic"><a target="_blank" class="user_img" href="http://dongdamen.yiss.com/people/8644" title="JM_mine"><img border="0" src="http://dimg.yissimg.com/themes/front/yiss/images/customerIconDefault75.jpg"></a></div><a target="_blank" class="user_name" title="JM_mine" href="http://dongdamen.yiss.com/people/8644">JM_mine</a> 
+            </div>
+            
+            <div class="lastPic"> 
+	            <a href="http://dongdamen.yiss.com/styles/115188.html" target="_blank"><span><img src="http://dimage.yissimg.com/item/2013/0309/16/ec8dec1df4334d91a7bc55013fbc61e5.jpg!140.jpg" border="0"></span></a> 
+	            <a href="http://dongdamen.yiss.com/styles/251840.html" target="_blank"><span><img src="http://dimage.yissimg.com/item/2013/0401/10/IMG-0212.jpg!140.jpg" border="0"></span></a> 
+	            <a href="http://dongdamen.yiss.com/styles/256528.html" target="_blank"><span><img src="http://dimage.yissimg.com/item/2013/0402/10/DSC-0025.jpg!140.jpg" border="0"></span></a> 
+            </div>
+          <div class="clearLine"></div>
+        </li>
+        <li>
+            <div class="info">
+            	<div class="head_pic"><a target="_blank" class="user_img" href="http://dongdamen.yiss.com/people/15924" title="mars"><img border="0" src="http://dimg.yissimg.com/themes/front/yiss/images/customerIconDefault75.jpg"></a></div><a target="_blank" class="user_name" title="mars" href="http://dongdamen.yiss.com/people/15924">mars</a> 
+            </div>
+            
+            <div class="lastPic"> 
+            </div>
+          <div class="clearLine"></div>
+        </li>
+        <li>
+            <div class="info">
+            	<div class="head_pic"><a target="_blank" class="user_img" href="http://dongdamen.yiss.com/people/16927" title="貌似如花"><img border="0" src="http://dimg.yissimg.com/themes/front/yiss/images/customerIconDefault75.jpg"></a></div><a target="_blank" class="user_name" title="貌似如花" href="http://dongdamen.yiss.com/people/16927">貌似如花</a> 
+            </div>
+            
+            <div class="lastPic"> 
+	            <a href="http://dongdamen.yiss.com/styles/1482345.html" target="_blank"><span><img src="http://dimage.yissimg.com/item/2013/1003/10/DSC-0503.jpg!140.jpg" border="0"></span></a> 
+	            <a href="http://dongdamen.yiss.com/styles/1227780.html" target="_blank"><span><img src="http://dimage.yissimg.com/item/2013/0905/10/DSC-0943.jpg!140.jpg" border="0"></span></a> 
+            </div>
+          <div class="clearLine"></div>
+        </li>
+        <li>
+            <div class="info">
+            	<div class="head_pic"><a target="_blank" class="user_img" href="http://dongdamen.yiss.com/people/10023" title="HelloUKorea"><img border="0" src="http://dimg.yissimg.com/themes/front/yiss/images/customerIconDefault75.jpg"></a></div><a target="_blank" class="user_name" title="HelloUKorea" href="http://dongdamen.yiss.com/people/10023">HelloUKorea</a> 
+            </div>
+            
+            <div class="lastPic"> 
+	            <a href="http://dongdamen.yiss.com/styles/1666902.html" target="_blank"><span><img src="http://dimage.yissimg.com/item/2013/1021/10/DSC-100068.jpg!140.jpg" border="0"></span></a> 
+	            <a href="http://dongdamen.yiss.com/styles/1499019.html" target="_blank"><span><img src="http://dimage.yissimg.com/item/2013/1004/21/DSC-0149.jpg!140.jpg" border="0"></span></a> 
+	            <a href="http://dongdamen.yiss.com/styles/1444085.html" target="_blank"><span><img src="http://dimage.yissimg.com/item/2013/0928/20/IMG-1032.jpg!140.jpg" border="0"></span></a> 
+            </div>
+          <div class="clearLine"></div>
+        </li>
+        <li>
+            <div class="info">
+            	<div class="head_pic"><a target="_blank" class="user_img" href="http://dongdamen.yiss.com/people/12347" title="cicimonica1987"><img border="0" src="http://dimg.yissimg.com/themes/front/yiss/images/customerIconDefault75.jpg"></a></div><a target="_blank" class="user_name" title="cicimonica1987" href="http://dongdamen.yiss.com/people/12347">cicimonica1987</a> 
+            </div>
+            
+            <div class="lastPic"> 
+            </div>
+          <div class="clearLine"></div>
+        </li>
+      </ul>
+    </div>
+	<div class="list">
+		<span>
+<a target="_blank" class="user_img" href="http://dongdamen.yiss.com/people/9756" title="酸糖奶酪"><img border="0" src="http://dimg.yissimg.com/themes/front/yiss/images/customerIconDefault75.jpg"></a>		</span>
+		<span>
+<a target="_blank" class="user_img" href="http://dongdamen.yiss.com/people/14663" title="爱华丫丫"><img border="0" src="http://dimg.yissimg.com/themes/front/yiss/images/customerIconDefault75.jpg"></a>		</span>
+		<span>
+<a target="_blank" class="user_img" href="http://dongdamen.yiss.com/people/9414" title="潘潘"><img border="0" src="http://dimg.yissimg.com/themes/front/yiss/images/customerIconDefault75.jpg"></a>		</span>
+		<span>
+<a target="_blank" class="user_img" href="http://dongdamen.yiss.com/people/17132" title="趴皮"><img border="0" src="http://dimg.yissimg.com/themes/front/yiss/images/customerIconDefault75.jpg"></a>		</span>
+	</div>
+	<script>
+	$j(function(){
+		if ($j.browser.msie) {
+		   $j(".people .list span:nth-child(9n+1)").css("marginLeft","0");
+		   $j(".people .list span:nth-child(9n)").css("marginLeft","15");
+		}
+	})
+	</script>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="clearLine"></div>
+	</div>
+</div>
+	</div>	
+</form>  <div id="footer">
+  	<div class="content_wrapper">
+      <div class="foot_link">
+		<div class="footer-box tel">
+          <ul>
+            <li><span class="number">400 -657 -1818</span><strong>中国</strong> 08:00-17:00 周日休息</li>
+            <li><span class="number">070 -7764-8859</span><strong>韩国</strong> 09:00-18:00 周日休息</li>
+          </ul>
+        </div>      
+        <div class="footer-box">
+          <h3>新手指南</h3>
+          <ul>
+            <li><a href="http://dongdamen.yiss.com/dongdamen-introduced.html" target="_blank" >东大门介绍</a></li>
+            <li><a href="http://dongdamen.yiss.com/help/registration.html" target="_blank" >注册新用户</a></li>
+            <li><a href="http://dongdamen.yiss.com/help/change-password.html" target="_blank" >修改密码</a></li>
+            <li><a href="http://dongdamen.yiss.com/help/purchasing-questions.html" target="_blank" >常见问题</a></li>
+            <li><a href="http://dongdamen.yiss.com/help/size-guide.html" target="_blank" >尺码指南</a></li>
+          </ul>
+        </div>
+        <div class="footer-box">
+          <h3>采购服务</h3>
+          <ul>
+            <li><a href="http://dongdamen.yiss.com/help/dongdamen-products.html" target="_blank" >选新款</a></li>
+            <li><a href="http://dongdamen.yiss.com/help/dongdamen-collections.html" target="_blank" >看图集</a></li>
+            <li><a href="http://dongdamen.yiss.com/help/dongdamen-purchasing-service.html" target="_blank" >东大门代购</a></li>
+            <li><a href="http://dongdamen.yiss.com/help/dongdamen-delivery.html" target="_blank" >东大门物流</a></li>
+          </ul>
+        </div>
+        <div class="footer-box">
+          <h3>帮助中心</h3>
+          <ul>
+            <li><a href="http://dongdamen.yiss.com/help/buying-and-sending-gift-card.html" target="_blank" >充值卡</a></li>
+            <li><a href="http://dongdamen.yiss.com/help/shopping-procedure.html" target="_blank" >购物流程</a></li>
+            <li><a href="http://dongdamen.yiss.com/help/payment.html" target="_blank" >支付方式</a></li>
+            <li><a href="http://dongdamen.yiss.com/help/delivery.html" target="_blank" >物流配送</a></li>
+            <li><a href="http://dongdamen.yiss.com/help/customer-service.html" target="_blank" >售后服务</a></li>
+          </ul>
+        </div>
+        <div class="footer-box last">
+          <h3>东大门批发网</h3>
+          <ul>
+            <li><a href="http://dongdamen.yiss.com/about-us.html" target="_blank" >关于我们</a></li>
+            <li><a href="http://dongdamen.yiss.com/contact-us.html" target="_blank" >联系我们</a></li>
+            <li><a href="http://dongdamen.yiss.com/links.html" target="_blank" >友情链接</a></li>
+          </ul>
+        </div>
+		</div>
+  	</div>
+<div class="copyRight"> 
+    <!--<img border="0" src="http://dimg.yissimg.com/themes/front/yiss/images/match_article_142.gif">-->
+	<div class="right"><a href="http://www.yiss.com" target="_blank">壹时尚</a>(YISS.COM)旗下网站</div>
+    <div class="fleft">Copyright &copy; 2012 YISS.COM, All Rights Reserved. 粤ICP备12004388号-1<br />
+	东大门办公地址：韩国 首尔市 中区 新堂洞 251-44 光信大厦 201 
+</div>
+</div>  </div>
+  <div id="float_fixed">
+  	<div id="two-dimensionalCode">
+		<img src="http://dimg.yissimg.com/themes/front/yiss/images/two-dimensionalCode.gif" border="0" width="29" height="26" />
+		<a href="javascript:void(0)">二维码</a>
+		<div class="content">
+			<img src="http://dimg.yissimg.com/themes/front/yiss/images/two-dimensionalCode_a.gif" border="0" width="218" height="218" />
+			微信扫码订阅东大门，<br/>
+			享受星级服务！
+		</div>
+	</div>
+	<div id="back-top"><a href="#top">回到顶部</a></div>
+  </div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31619614-2']);
+  _gaq.push(['_setDomainName', 'yiss.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></div>
+</body>
+</html>
