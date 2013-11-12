@@ -64,6 +64,7 @@ while(1)
 			'url'=>$v,
 			);
 	}
+	break;
 	if($serialNum * $size >= $all)
 		break;
 	$serialNum++;
@@ -76,19 +77,34 @@ foreach($orderList as &$order)
 
 	preg_match('/<span id=\"order_status\">(.*?)<\/span>/is',$output,$sta);
 	$order_status = $sta[1];
-	$order['status'] = trim($order_status);
+	if($order_status != '')
+		$order['status'] = trim($order_status);
 
-	if(preg_match_all('/item-list.*?img src=\"(.*?)\".*?<a href=\".*?relateId=(\d+)\".*?状态.*?<span>(.*?)<\/span>.*?<a href=\"(.*?)\"/is',$output,$m))
+	//2013-11-12 10:03:23
+	preg_match('/<strong>(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})<\/strong>/is',$output,$dat);
+	$date = $dat[1];
+	if($date !='')
+		$order['date'] = trim($date); 
+
+	if(preg_match_all('/item-list(.*?)<\/table>/is',$output,$itemList))
 	{
-		foreach($m[1] as $k=> $v)
+		foreach($itemList[1] as $itemLine)
 		{
-			$v = str_replace('!73.jpg','!small',$v);
-			$order['items'][] = json_encode(array(
-				'img'=>$v,
-				'id'=>$m[2][$k],
-				'url'=>"http://dongdamen.yiss.com/styles/{$m[2][$k]}.html",
-				'status'=>trim($m[3][$k]),
-			));
+			if(preg_match_all('/img src=\"(.*?)\".*?<a href=\".*?relateId=(\d+)\".*?数量.*?<span>(.*?)<\/span>.*?状态.*?<span>(.*?)<\/span>/is',$itemLine,$m))
+			{
+				
+				foreach($m[1] as $k=> $v)
+				{
+					$v = str_replace('!73.jpg','!small',$v);
+					$order['items'][] = json_encode(array(
+						'img'=>$v,
+						'id'=>$m[2][$k],
+						'url'=>"http://dongdamen.yiss.com/styles/{$m[2][$k]}.html",
+						'num' => trim($m[3][$k]),
+						'status'=>trim($m[4][$k]),
+					));
+				}
+			}
 		}
 	}
 }

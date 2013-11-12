@@ -15,8 +15,10 @@ define('MODEL_PHOTO', MODEL."/photo");
 define('MODEL_WEIBO', MODEL."/weibo");
 define('MODEL_DUSTBIN', MODEL."/dustbin");
 define('MODEL_LOGIN', MODEL."/login");
+define('MODEL_ORDER', MODEL."/order");
 
 define('CONTROLLER_POST', CONTROLLER."/post");
+define('CONTROLLER_ORDER', CONTROLLER."/order");
 define('CONTROLLER_COMMENT', CONTROLLER."/comment");
 define('CONTROLLER_PHOTO', CONTROLLER."/photo");
 define('CONTROLLER_WEIBO', CONTROLLER."/weibo");

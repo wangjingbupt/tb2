@@ -32,8 +32,6 @@ HTML;
 				    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
 							<i class="icon-cog icon-white"></i><b class="caret"></b></a>
 						<ul class="dropdown-menu">
-						<li><a href="/editor/" style="font-weight:bold">发博文</a></li>
-						<li><a href="/dustbin/post" style="font-weight:bold">垃圾箱</a></li>
 						<li><a href="/callback/logout" style="font-weight:bold">登出</a></li>
 						</ul>
 				</li>
@@ -76,8 +74,8 @@ HTML;
           <span class="brand" style='color:#ffffff;'> Erik's</span>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li <?php echo $data['activeHome'];?>  ><a href="/" >Home</a></li>
-              <li <?php echo $data['activeAbout'];?>  ><a href="/about" >About</a></li>
+              <li <?php echo $data['activeHome'];?>  ><a href="/" >商品</a></li>
+              <li <?php echo $data['activeOrder'];?>  ><a href="/order" >东大门订单</a></li>
             </ul>
           </div><!--/.nav-collapse -->
 					<?php echo $login; ?>
