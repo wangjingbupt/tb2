@@ -172,37 +172,19 @@ class PostModel{
 
 	}
 
-	public function editPost($post_id,$title,$content,$date,$tags=array(),$photoList=array())
+	public function editPostComment($id,$cms)
 	{
-		$this->PostD->setCollection('post');
+		$this->PostD->setCollection('items');
 		
-		$id = new MOngoId($post_id);
-		$doc = $this->PostD->findOne(array('_id'=>$id,'status'=>1));
+		$doc = $this->PostD->findOne(array('id'=>$id));
 		if(!$doc)
 		{
 			return false;
 		}
-		if(isset($date))
-		{
-			$postTime = strtotime($date);
-			if($postTime<=0)
-				$postTime = time();
-			$doc['createtime'] = $postTime;
-		}
-		if(isset($title))
-		{
-			$doc['title'] = $title;
-		}
-		if(isset($content))
-		{
-			$doc['content'] = $content;
-		}
-		if(isset($tags))
-		{
-			$doc['tags'] = $tags;
-		}
+		$doc['comments'] = $cms;
 
-		$sign = $this->PostD->update(array('_id'=>$id), $doc);
+
+		$sign = $this->PostD->update(array('id'=>$id), $doc);
 		if($sign)
 			return self::mongoDoc2Array($doc);
 

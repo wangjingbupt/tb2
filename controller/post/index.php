@@ -44,6 +44,10 @@ function postDispatch()
 			$className = 'PostTag';
 			include(CONTROLLER_POST."/tag.php");
 			break;
+		case 'addComment':
+			$className = 'PostAddComment';
+			include(CONTROLLER_POST."/addComment.php");
+			break;
 		default: 
 			$className = 'PostList';
 			include(CONTROLLER_POST."/list.php");

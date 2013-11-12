@@ -8,17 +8,21 @@ public function post($post)
 	$img = $post['img'];
 	$title = $post['title'];
 	$status = $post['onsale'] ? '有货':'无货';
+	if(!$post['onsale'])
+		$bg = 'background-color:#c0392b;';
+	else
+		$bg='';
 	$url = $post['url'];
 	$price = $post['price'];
 	$band = $post['band'];
 	$myPrice = $post['myPrice'];
 	$pubtime = $post['pubtime'];
 	$_id = $post['_id'];
-	$comments = isset($post['comments']) ? $post['comments'] : "<input type='text' name='comment_{$id}' />";
+	$comments = isset($post['comments']) ? $post['comments'] : "<input type='text' id='comment_0' name='comment_{$id}' /><button type='submit' name='cms_button' id='cms_button' class='btn btn-inverse btn-small'>走你</button>";
 	$html = <<<HTML
 						<div class="well">
 						<table class="table table-bordered">
-						<tr>
+						<tr style='$bg'>
 							<td style='width:5%;'>$id</td>
 							<td style='width:25%;'><img src="$img"></td>
 							<td style='width:15%;'>$title</td>

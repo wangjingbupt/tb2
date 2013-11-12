@@ -23,6 +23,7 @@ class ViewIndex {
 
 		if(is_array($datas['post']) && !empty($datas['post']))
 		{
+			$nn = 0;
 			foreach($datas['post'] as $post)
 			{
 				if(date('Y',$post['createtime']) == date('Y'))
@@ -30,8 +31,44 @@ class ViewIndex {
 				else
 					$post['pubtime'] = date("Y-m-d H:i",$post['createtime']);
 
+				$id = trim($post['id']);
+				$img = $post['img'];
+				$title = $post['title'];
+				$status = $post['onsale'] ? '有货':'无货';
+				if(!$post['onsale'])
+					$bg = 'background-color:#c0392b;';
+				else
+					$bg='';
+				$url = $post['url'];
+				$price = $post['price'];
+				$band = $post['band'];
+				$myPrice = $post['myPrice'];
+				$pubtime = $post['pubtime'];
+				$_id = $post['_id'];
+				$comments = isset($post['comments']) ? $post['comments'] : "<input type='text' id='comment_$nn' /><input type='hidden' id='item_$nn' value='$id' /><button type='submit' name='cms_button' id='cms_button' onclick='postdata($nn);return false;' class='btn btn-inverse btn-small'>提交</button>";
+				$html .= <<<HTML
+					<div class="well">
+					<table class="table table-bordered">
+					<tr style='$bg'>
+					<td style='width:5%;'>$id</td>
+					<td style='width:25%;'><img src="$img"></td>
+					<td style='width:15%;'>$title</td>
+					<td style='width:8%;'>$status</td>
+					<td style='width:8%;'><a href="$url" target='_blank'>链接地址</a></td>
+					<td style='width:5%;'>$price</td>
+					<td style='width:8%;'>$band</td>
+					<td style='width:5%;'>$myPrice</td>
+					<td style='width:6%;'>$pubtime</td>
+					<td style='width:8%;' id='cms_$nn'>$comments</td>
+					<td style='width:7%;'><a href="/deletepost/$_id"><small>删除</small></a>
+					</tr>
+					</table>
+					</div><!--/.well -->
 
-				$html .= ViewPost::post($post);
+HTML;
+				$nn++;
+
+
 			}
 		}
 		$html .='<div><ul class="pager">';
@@ -65,7 +102,7 @@ class ViewIndex {
 		$html .='</div></div></div>';
 		echo $html;
 		//include(VIEW.'/container.php');
-			
+
 		include(VIEW.'/footer.php');
 	}
 

@@ -40,12 +40,47 @@ class PostList extends control{
 		$data['activeHome'] = 'class="active"';
 		$data['activePhoto'] = '';
 		$data['activeWeibo'] = '';
+		$data['script'] = $this->getScript();
 		$GLOBALS['DATA'] = $data;
 		ViewIndex::render($datas);
 		
 		
 		
 		//print_r($datas);
+	}
+
+	public function getScript()
+	{
+		$html =<<<HTML
+			<script type="text/javascript">
+function postdata(num){                              //提交数据函数   
+	var cms = $("#comment_"+num).val();
+	var itemId = $("#item_"+num).val();
+	if(cms && itemId)
+	{
+		$.ajax({ 
+		type: "POST", 
+		url: "/addComment",  
+		data: "cms="+$("#comment_"+num).val()+"&item_id="+$("#item_"+num).val(), 
+		success: function(msg){         
+			var dataObj=eval("("+msg+")");
+			if(dataObj.code == 'ok')
+			{
+				document.getElementById("cms_"+num).innerHTML = cms;
+			}
+			else
+			{
+
+			}
+		}   
+	});
+	}
+return false;
+}   
+</script>  
+HTML;
+		return $html;
+		
 	}
 
 }
