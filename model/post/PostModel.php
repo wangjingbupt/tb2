@@ -9,22 +9,25 @@ class PostModel{
 
 	}
 
-	public function getPostList($page=0)
+	public function getPostList($page=0,$where = array())
 	{
 		$this->PostD->setCollection('items');
 		$offset = $page * $this->_postLimit;
 
-		$cursor = $this->PostD->find(array('status'=>1));
+		$where['status']=1;
+
+		$cursor = $this->PostD->find($where);
 		
 		$cursor->sort(array('createtime'=>-1))->skip($offset)->limit($this->_postLimit);
 		
 		return self::mongoObj2Array($cursor);
 	}	
 	
-	public function getPostCount()
+	public function getPostCount($where = array())
 	{
+		$where['status']=1;
 		$this->PostD->setCollection('items');
-		$cursor = $this->PostD->find(array('status'=>1));
+		$cursor = $this->PostD->find($where);
 		$count = intval($cursor->count());
 
 		return $count;
