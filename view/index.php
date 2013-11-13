@@ -9,6 +9,8 @@ class ViewIndex {
 		include(VIEW.'/header.php');
 		include(VIEW.'/banner.php');
 
+		$classConf = classConf::i2c();
+
 		$html = '<div class="container"><div class="row-fluid"><div class="span10"><div class = "span12">';
 		$html .='<div><ul class="pager">';
 		if(isset($datas['hasPrev']))
@@ -26,6 +28,11 @@ class ViewIndex {
 			$nn = 0;
 			foreach($datas['post'] as $post)
 			{
+				$classCheck = '';
+				foreach($classConf as $k =>$class)
+				{
+					$classCheck .="<span style='margin-left:5px;line-height:25px;'><input type='checkbox' value='$k' name='class_check_$nn'/> {$class} </span>";
+				}
 				if(date('Y',$post['createtime']) == date('Y'))
 					$post['pubtime'] = date("m-d H:i",$post['createtime']);
 				else
@@ -45,7 +52,7 @@ class ViewIndex {
 				$myPrice = $post['myPrice'];
 				$pubtime = $post['pubtime'];
 				$_id = $post['_id'];
-				$comments = isset($post['comments']) ? $post['comments'] : "<input type='text' id='comment_$nn' /><input type='hidden' id='item_$nn' value='$id' /><button type='submit' name='cms_button' id='cms_button' onclick='postdata($nn);return false;' class='btn btn-inverse btn-small'>提交</button>";
+				$comments = isset($post['comments']) ? $post['comments'] : "<input type='text' id='comment_$nn' /><input type='hidden' id='item_$nn' value='$id' />{$classCheck}<button type='submit' name='cms_button' id='cms_button' onclick='postdata($nn);return false;' class='btn btn-inverse btn-small'>提交</button>";
 				$html .= <<<HTML
 					<div class="well">
 					<table class="table table-bordered">

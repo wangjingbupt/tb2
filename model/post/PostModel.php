@@ -172,7 +172,7 @@ class PostModel{
 
 	}
 
-	public function editPostComment($id,$cms)
+	public function editPostComment($id,$cms,$class=array())
 	{
 		$this->PostD->setCollection('items');
 		
@@ -182,6 +182,7 @@ class PostModel{
 			return false;
 		}
 		$doc['comments'] = $cms;
+		$doc['cat'] = $class;
 
 
 		$sign = $this->PostD->update(array('id'=>$id), $doc);

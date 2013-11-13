@@ -56,12 +56,19 @@ class PostList extends control{
 function postdata(num){                              //提交数据函数   
 	var cms = $("#comment_"+num).val();
 	var itemId = $("#item_"+num).val();
-	if(cms && itemId)
+	var x=document.getElementsByName("class_check_"+num);
+	var classchcek = ''
+	for (var i=0;i<x.length;i++)
+	{
+		if(x[i].checked)
+			classchcek +=x[i].value + ',';
+	}
+	if(cms && itemId && classchcek)
 	{
 		$.ajax({ 
 		type: "POST", 
 		url: "/addComment",  
-		data: "cms="+$("#comment_"+num).val()+"&item_id="+$("#item_"+num).val(), 
+		data: "cms="+$("#comment_"+num).val()+"&item_id="+$("#item_"+num).val()+"&class="+classchcek, 
 		success: function(msg){         
 			var dataObj=eval("("+msg+")");
 			if(dataObj.code == 'ok')

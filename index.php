@@ -6,6 +6,7 @@ session_start();
 //print_r($_COOKIE);
 
 include('config/config.php');
+include('config/class.conf.php');
 include(DATA.'/mongo.class.php');
 include(UTIL.'/Login.class.php');
 include(UTIL.'/Curl.class.php');

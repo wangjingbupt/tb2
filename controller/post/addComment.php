@@ -7,6 +7,7 @@ class PostAddComment extends control{
 
 		$this->id = trim($_POST['item_id']);
 		$this->cms = trim($_POST['cms']);
+		$this->class = trim($_POST['class']);
 		
 		if($this->id == '' || $this->cms == '')
 			return false;
@@ -20,7 +21,10 @@ class PostAddComment extends control{
 		
 		$postModel = new PostModel();
 
-		$data = $postModel->editPostComment($this->id,$this->cms);
+		$class = explode(',',$this->class);
+		$class = array_filter($class);
+
+		$data = $postModel->editPostComment($this->id,$this->cms,$class);
 		$this->display(array('code'=>'ok','data'=>$data));
 
 	}
