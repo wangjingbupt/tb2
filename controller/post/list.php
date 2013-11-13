@@ -6,6 +6,8 @@ class PostList extends control{
 	public function checkPara(){
 		
 		$this->page = intval($GLOBALS['URL_PATH'][1]);
+		$this->cat = trim($_GET['cat']);
+		$this->skey = trim($_GET['skey']);
 
 		return true;
 
@@ -13,8 +15,37 @@ class PostList extends control{
 
 	public function action(){
 		$postModel = new PostModel();
-		$datas['post'] = $postModel->getPostList($this->page);
-		$postNum = $postModel->getPostCount();
+		if($this->cat != '')
+		{
+			$where = array(
+				'cat'=>array('$in'=>array($this->cat)),	
+		
+			);
+		}
+		if($this->skey !='')
+		{
+			$arr = explode(' ',$this->skey,2);
+			if(count($arr) == 1)
+			{
+				$where['$or'] = array(
+						array('comments' => new MongoRegex("/{$arr[0]}/is")),
+						array('title' => new MongoRegex("/{$arr[0]}/is")),
+				);
+				
+			}
+
+			if(count($arr) == 2)
+			{
+				$where['$or'] = array(
+					array('comments' => new MongoRegex("/({$arr[0]}.*?{$arr[1]}|{$arr[1]}.*?{$arr[0]})/")),
+						array('title' => new MongoRegex("/({$arr[0]}.*?{$arr[1]}|{$arr[1]}.*?{$arr[0]})/")),
+				);
+			}
+
+		}
+
+		$datas['post'] = $postModel->getPostList($this->page,$where);
+		$postNum = $postModel->getPostCount($where);
 		if($postNum > POST_PAGE_NUM * ($this->page+1))
 			$datas['hasNext'] = $this->page+1;
 

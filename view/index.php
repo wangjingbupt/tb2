@@ -12,6 +12,20 @@ class ViewIndex {
 		$classConf = classConf::i2c();
 
 		$html = '<div class="container"><div class="row-fluid"><div class="span10"><div class = "span12">';
+		$html .='<div class="navbar"><div class="navbar-inner">分类<ul class="nav">';
+		if($this->cat =="")
+			$html .='<li class="active"><a href="/">全部</a></li>';
+		else
+			$html .='<li><a href="/">全部</a></li>';
+		foreach($classConf as $k => $v)
+		{
+			if($this->cat == $k )
+				$html .="<li class='active'><a href='/?cat={$k}'>{$v}</a></li>";
+			else
+				$html .="<li><a href='/?cat={$k}'>{$v}</a></li>";
+		}
+		$html .="</ul></div></div>";
+		$html .="<form class='form-search' action='/' method='GET'><input type='text' name = 'skey' class='input-medium search-query' value='{$this->skey}'><input type='hidden' name = 'cat' value = '{$this->cat}'> <button type='submit' class='btn'>Search</button></form>";
 		$html .='<div><ul class="pager">';
 		if(isset($datas['hasPrev']))
 		{
@@ -51,14 +65,21 @@ class ViewIndex {
 				$band = $post['band'];
 				$myPrice = $post['myPrice'];
 				$pubtime = $post['pubtime'];
+				$cat = isset($post['cat']) ? $post['cat'] : array();
+				$class = '';
+				foreach($cat as $c)
+				{
+					$class .=isset($class) ? $classConf[$c] : "," .$classConf[$c];
+				}
+
 				$_id = $post['_id'];
-				$comments = isset($post['comments']) ? $post['comments'] : "<input type='text' id='comment_$nn' /><input type='hidden' id='item_$nn' value='$id' />{$classCheck}<button type='submit' name='cms_button' id='cms_button' onclick='postdata($nn);return false;' class='btn btn-inverse btn-small'>提交</button>";
+				$comments = isset($post['comments']) ? $post['comments']."</td><td style='width:5%;'>". $class : "<input type='text' id='comment_$nn' /><input type='hidden' id='item_$nn' value='$id' />{$classCheck}<button type='submit' name='cms_button' id='cms_button' onclick='postdata($nn);return false;' class='btn btn-inverse btn-small'>提交</button>";
 				$html .= <<<HTML
 					<div class="well">
 					<table class="table table-bordered">
 					<tr style='$bg'>
 					<td style='width:5%;'>$id</td>
-					<td style='width:25%;'><img src="$img"></td>
+					<td style='width:15%;'><img src="$img"></td>
 					<td style='width:15%;'>$title</td>
 					<td style='width:8%;'>$status</td>
 					<td style='width:8%;'><a href="$url" target='_blank'>链接地址</a></td>
@@ -66,7 +87,7 @@ class ViewIndex {
 					<td style='width:8%;'>$band</td>
 					<td style='width:5%;'>$myPrice</td>
 					<td style='width:6%;'>$pubtime</td>
-					<td style='width:8%;' id='cms_$nn'>$comments</td>
+					<td style='width:13%;' id='cms_$nn'>$comments</td>
 					<td style='width:7%;'><a href="/deletepost/$_id"><small>删除</small></a>
 					</tr>
 					</table>
