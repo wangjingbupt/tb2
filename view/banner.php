@@ -21,7 +21,6 @@
 HTML;
 		}else if($GLOBALS['LOGIN_DATA']['is_admin']==1)
 		{
-			print_r($login_data);
 			$login_data = $GLOBALS['LOGIN_DATA'];
 			$login = '<div class="offset10" style="width:30%">';
 			$login .='

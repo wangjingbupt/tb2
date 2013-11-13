@@ -48,7 +48,7 @@ class ViewIndex {
 					$bg='';
 				$url = $post['url'];
 				$price = $post['price'];
-				$band = $post['band'];
+				$band = isset($post['band']) ? $post['band'] : '';
 				$myPrice = $post['myPrice'];
 				$pubtime = $post['pubtime'];
 				$_id = $post['_id'];
