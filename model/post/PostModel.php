@@ -207,6 +207,8 @@ class PostModel{
 		if(is_array($oItem) && !empty($oItem))
 		{
 			$item['status'] = 1;
+			$item['comments'] = $oItem['comments'];
+			$item['cat'] = $oItem['cat'];
 			
 			$sign = $this->PostD->update(array('id'=>$id), $item);
 			if($sign)

@@ -12,7 +12,7 @@ class ViewIndex {
 		$classConf = classConf::i2c();
 
 		$html = '<div class="container"><div class="row-fluid"><div class="span10"><div class = "span12">';
-		$html .='<div class="navbar"><div class="navbar-inner">分类<ul class="nav">';
+		$html .='<div class="navbar"><div class="navbar-inner"><a class="brand" href="#">分类</a><ul class="nav">';
 		if($this->cat =="")
 			$html .='<li class="active"><a href="/">全部</a></li>';
 		else
@@ -73,21 +73,21 @@ class ViewIndex {
 				}
 
 				$_id = $post['_id'];
-				$comments = isset($post['comments']) ? $post['comments']."</td><td style='width:5%;'>". $class : "<input type='text' id='comment_$nn' /><input type='hidden' id='item_$nn' value='$id' />{$classCheck}<button type='submit' name='cms_button' id='cms_button' onclick='postdata($nn);return false;' class='btn btn-inverse btn-small'>提交</button>";
+				$comments = isset($post['comments']) ? $post['comments']."</td><td style='width:8%;'>". $class : "<input type='text' id='comment_$nn' /><input type='hidden' id='item_$nn' value='$id' />{$classCheck}<button type='submit' name='cms_button' id='cms_button' onclick='postdata($nn);return false;' class='btn btn-inverse btn-small'>提交</button>";
 				$html .= <<<HTML
 					<div class="well">
 					<table class="table table-bordered">
 					<tr style='$bg'>
 					<td style='width:5%;'>$id</td>
-					<td style='width:15%;'><img src="$img"></td>
-					<td style='width:15%;'>$title</td>
-					<td style='width:8%;'>$status</td>
-					<td style='width:8%;'><a href="$url" target='_blank'>链接地址</a></td>
+					<td style='width:20%;'><img src="$img"></td>
+					<td style='width:10%;'>$title</td>
+					<td style='width:5%;'>$status</td>
+					<td style='width:6%;'><a href="$url" target='_blank'>链接地址</a></td>
 					<td style='width:5%;'>$price</td>
 					<td style='width:8%;'>$band</td>
 					<td style='width:5%;'>$myPrice</td>
 					<td style='width:6%;'>$pubtime</td>
-					<td style='width:13%;' id='cms_$nn'>$comments</td>
+					<td style='width:10%;' id='cms_$nn'>$comments</td>
 					<td style='width:7%;'><a href="/deletepost/$_id"><small>删除</small></a>
 					</tr>
 					</table>

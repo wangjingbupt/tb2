@@ -64,7 +64,6 @@ while(1)
 			'url'=>$v,
 			);
 	}
-	break;
 	if($serialNum * $size >= $all)
 		break;
 	$serialNum++;
