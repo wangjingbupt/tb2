@@ -209,10 +209,14 @@ class PostModel{
 			$item['status'] = 1;
 			$item['comments'] = $oItem['comments'];
 			$item['cat'] = $oItem['cat'];
+			$item['createtime'] = $oItem['createtime'];
 			
 			$sign = $this->PostD->update(array('id'=>$id), $item);
 			if($sign)
+			{
 				$item['_id'] = $oItem['_id'];
+				unset($item['createtime']);
+			}
 		}
 		else
 		{
