@@ -210,6 +210,7 @@ class PostModel{
 			$item['comments'] = $oItem['comments'];
 			$item['cat'] = $oItem['cat'];
 			$item['createtime'] = $oItem['createtime'];
+			$id = $item['id'];
 			
 			$sign = $this->PostD->update(array('id'=>$id), $item);
 			if($sign)
