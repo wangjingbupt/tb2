@@ -62,11 +62,12 @@ class PostModel{
 		$this->PostD->setCollection('items');
 		$id =new MOngoId($pid); 
 
-		$doc = $this->PostD->findOne(array('_id'=>$id));
-		$doc['status'] =0;
-		$this->PostD->update(array('_id' => $doc['_id']), $doc);
+		//$doc = $this->PostD->findOne(array('_id'=>$id));
+		//$doc['status'] =0;
+		$this->PostD->remove(array('_id' => $id));
+		return true;
 		
-		return self::mongoDoc2Array($doc);
+		//return self::mongoDoc2Array($doc);
 	}	
 
 	public function getFinderList($date,$page=0)
@@ -203,7 +204,7 @@ class PostModel{
 		$this->PostD->setCollection('items');
 		if(empty($item))
 			return false;
-		$oItem = $this->PostD->findOne(array('id'=>$item['id']));
+		$oItem = $this->PostD->findOne(array('id'=>$item['id'],'status'=>1));
 		if(is_array($oItem) && !empty($oItem))
 		{
 			$item['status'] = 1;

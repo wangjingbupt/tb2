@@ -66,6 +66,12 @@ class MyMongo{
 		return $this->colHandler->update($param,$update,$op);
 	}
 
+	public function remove($param ,$op=array())
+	{
+		$this->getColHandler();
+		return $this->colHandler->remove($param,$op);
+	}
+
 
 }
 

@@ -18,19 +18,14 @@ class PostDelPost extends control{
 		
 		
 		$postModel = new PostModel();
-
+		
 		$post = $postModel->delPost($this->pid);
-		if($post['status'] == 0)
+		if($post)
 		{
-			$postModel->decFinderNum($post['createtime']);
-			$uri = '/';
-			header("Location: $uri");
+			//$postModel->decFinderNum($post['createtime']);
 		}
-		else{
-			$uri = '/detail/'.$post['_id']."?del=faild";
-			header("Location: $uri");
-			
-		}
+		$uri = '/';
+		header("Location: $uri");
 	}
 
 
