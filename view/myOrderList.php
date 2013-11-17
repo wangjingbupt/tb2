@@ -1,5 +1,4 @@
 <?php
-include(VIEW.'/post.php');
 class ViewIndex {
 
 	public function render($datas)
@@ -9,7 +8,11 @@ class ViewIndex {
 		include(VIEW.'/header.php');
 		include(VIEW.'/banner.php');
 
-		$classConf = classConf::i2c();
+		$classConf = array(
+			1=>'未发货',
+			2=>'已发货',
+			3=>'部分已发货',
+		);
 
 		$html = '<div class="container"><div class="row-fluid"><div class="span10"><div class = "span12">';
 		$html .='<div class="navbar"><div class="navbar-inner"><a class="brand" href="#">分类</a><ul class="nav">';
@@ -20,12 +23,12 @@ class ViewIndex {
 		foreach($classConf as $k => $v)
 		{
 			if($this->cat == $k )
-				$html .="<li class='active'><a href='/?cat={$k}'>{$v}</a></li>";
+				$html .="<li class='active'><a href='/myorder?cat={$k}'>{$v}</a></li>";
 			else
-				$html .="<li><a href='/?cat={$k}'>{$v}</a></li>";
+				$html .="<li><a href='/myorder?cat={$k}'>{$v}</a></li>";
 		}
 		$html .="</ul></div></div>";
-		$html .="<form class='form-search' action='/' method='GET'><input type='text' name = 'skey' class='input-medium search-query' value='{$this->skey}'><input type='hidden' name = 'cat' value = '{$this->cat}'> <button type='submit' class='btn'>Search</button></form>";
+		$html .="<form class='form-search' action='/myorder' method='GET'><input type='text' name = 'skey' class='input-medium search-query' value='{$this->skey}'><input type='hidden' name = 'cat' value = '{$this->cat}'> <button type='submit' class='btn'>Search</button></form>";
 		$html .='<div><ul class="pager">';
 		if(isset($datas['hasPrev']))
 		{
@@ -37,7 +40,7 @@ class ViewIndex {
 		}
 		$html .='</ul></div>';
 
-		if(is_array($datas['post']) && !empty($datas['post']))
+		if(is_array($datas['list']) && !empty($datas['list']))
 		{
 			$nn = 0;
 			foreach($datas['post'] as $post)

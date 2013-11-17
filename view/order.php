@@ -13,11 +13,11 @@ class ViewIndex {
 		$html .='<div><ul class="pager">';
 		if(isset($datas['hasPrev']))
 		{
-			$html .='<li class="previous"><a href="/order/page/'.intval($datas['hasPrev']).'">Prev</a></li>';
+			$html .='<li class="previous"><a href="/order/page/'.intval($datas['hasPrev'])."?".$_SERVER['QUERY_STRING'].'">Prev</a></li>';
 		}
 		if(isset($datas['hasNext']))
 		{
-			$html .='<li class="next"><a href="/order/page/'.intval($datas['hasNext']).'">Next</a></li>';
+			$html .='<li class="next"><a href="/order/page/'.intval($datas['hasNext'])."?".$_SERVER['QUERY_STRING'].'">Next</a></li>';
 		}
 		$html .='</ul></div>';
 
@@ -68,11 +68,11 @@ HTML;
 		$html .='<div><ul class="pager">';
 		if(isset($datas['hasPrev']))
 		{
-			$html .='<li class="previous"><a href="/order/page/'.intval($datas['hasPrev']).'">Prev</a></li>';
+			$html .='<li class="previous"><a href="/order/page/'.intval($datas['hasPrev'])."?".$_SERVER['QUERY_STRING'].'">Prev</a></li>';
 		}
 		if(isset($datas['hasNext']))
 		{
-			$html .='<li class="next"><a href="/order/page/'.intval($datas['hasNext']).'">Next</a></li>';
+			$html .='<li class="next"><a href="/order/page/'.intval($datas['hasNext'])."?".$_SERVER['QUERY_STRING'].'">Next</a></li>';
 		}
 		$html .='</ul></div>';
 
