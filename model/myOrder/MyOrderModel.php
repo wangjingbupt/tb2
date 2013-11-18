@@ -9,12 +9,12 @@ class MyOrderModel{
 
 	}
 
-	public function getPostList($page=0)
+	public function getPostList($page=0,$w=array())
 	{
 		$this->PostD->setCollection('myorder');
 		$offset = $page * $this->_postLimit;
 
-		$cursor = $this->PostD->find(array());
+		$cursor = $this->PostD->find($w);
 		//$cursor = $this->PostD->find(array("status" => new MongoRegex("/(已支付|已发货)/")));
 		
 		$cursor->sort(array('id'=>-1))->skip($offset)->limit($this->_postLimit);
@@ -22,10 +22,10 @@ class MyOrderModel{
 		return self::mongoObj2Array($cursor);
 	}	
 	
-	public function getPostCount()
+	public function getPostCount($w=array())
 	{
 		$this->PostD->setCollection('myorder');
-		$cursor = $this->PostD->find(array());
+		$cursor = $this->PostD->find($w);
 		$count = intval($cursor->count());
 
 		return $count;
