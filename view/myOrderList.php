@@ -50,7 +50,7 @@ class ViewIndex {
 					$img ='';
 					$ddm ='';
 					$tb ='';
-					$classCheck .="<span style='margin-left:5px;line-height:25px;'><input type='checkbox' value='$k' name='class_check_$nn'/> {$class} </span>";
+					$classCheck .="<span style='margin-left:5px;line-height:25px;'><input type='checkbox' value='$k' name='class_check'/> {$class} </span>";
 				}
 
 

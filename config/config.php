@@ -16,10 +16,10 @@ define('MODEL_WEIBO', MODEL."/weibo");
 define('MODEL_DUSTBIN', MODEL."/dustbin");
 define('MODEL_LOGIN', MODEL."/login");
 define('MODEL_ORDER', MODEL."/order");
-define('MODEL_MYORDER', MODEL."/myOrder");
+define('MODEL_MYORDER', MODEL."/myorder");
 
 define('CONTROLLER_POST', CONTROLLER."/post");
-define('CONTROLLER_MYORDER', CONTROLLER."/myOrder");
+define('CONTROLLER_MYORDER', CONTROLLER."/myorder");
 define('CONTROLLER_ORDER', CONTROLLER."/order");
 define('CONTROLLER_COMMENT', CONTROLLER."/comment");
 define('CONTROLLER_PHOTO', CONTROLLER."/photo");

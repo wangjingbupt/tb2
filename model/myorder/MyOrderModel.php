@@ -17,7 +17,7 @@ class MyOrderModel{
 		$cursor = $this->PostD->find($w);
 		//$cursor = $this->PostD->find(array("status" => new MongoRegex("/(已支付|已发货)/")));
 		
-		$cursor->sort(array('id'=>-1))->skip($offset)->limit($this->_postLimit);
+		$cursor->sort(array('createtime'=>-1))->skip($offset)->limit($this->_postLimit);
 		
 		return self::mongoObj2Array($cursor);
 	}	

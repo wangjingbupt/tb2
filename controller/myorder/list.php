@@ -67,7 +67,6 @@ class MyOrderList extends control{
 		if($this->page > 0)
 			$datas['hasPrev'] = $this->page-1;
 
-
 		$this->format($datas);
 
 	}
