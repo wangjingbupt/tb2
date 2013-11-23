@@ -29,7 +29,14 @@ class MyOrderDetail extends control{
 			}
 			foreach($order['items'] as $id)
 			{
-				$order['itemsDetail'][] = $items[$id];
+				if(in_array($id,$order['itemsOk']))
+				{
+					$order['itemsDetailOk'][] = $items[$id];
+				}
+				else
+				{
+					$order['itemsDetail'][] = $items[$id];
+				}
 			}
 		}
 

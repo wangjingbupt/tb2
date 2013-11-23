@@ -16,6 +16,14 @@ function postDispatch()
 			$className = 'MyOrderUpdate';
 			include(CONTROLLER_MYORDER."/update.php");
 			break;
+		case 'sendOrder' :
+			$className = 'MyOrderSend';
+			include(CONTROLLER_MYORDER."/send.php");
+			break;
+		case 'sendItem' :
+			$className = 'MyOrderSendItem';
+			include(CONTROLLER_MYORDER."/sendItem.php");
+			break;
 		case 'detail' :
 			$className = 'MyOrderDetail';
 			include(CONTROLLER_MYORDER."/detail.php");

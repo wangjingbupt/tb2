@@ -48,13 +48,14 @@ class ViewDetail {
 				<label><span class='muted'>日期 : </span> <span class='text-info'>{$date}</span></label>
 				<label><span class='muted'>地址 : </span> <span class='text-error'>{$address}</span></label>
 			";
+
 			if(!empty($datas['order']['itemsDetail']))
 			{
 				$html .="<label><span class='muted'>未发货商品 : </span><table class='table table-bordered'><tr>";
 				$c = 1;
 				foreach($datas['order']['itemsDetail'] as $item)
 				{
-					$html .="<td><img src='{$item['img']}'></td><td>{$item['id']} {$item['status']} {$item['num']}</td>";
+					$html .="<td><img src='{$item['img']}'></td><td>{$item['id']} {$item['status']} {$item['num']} <br/><a class='btn btn-mini btn-primary' href='/myorder/sendItem?itemId={$item['id']}&id={$datas['order']['_id']}'>发货</a></td>";
 					if($c++%4 ==0)
 						$html .="</tr><tr>";
 				}

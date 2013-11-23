@@ -72,7 +72,7 @@ class ViewIndex {
 					$status .='<br>'.date("m-d H:i",$post['createtime']);
 				else
 					$status .= '<br>'.date("Y-m-d H:i",$post['createtime']);
-				if(!$post['status'] == '已发货')
+				if($post['status'] == '已发货')
 					$bg = 'background-color:#16a085;';
 				else
 					$bg='';
@@ -104,7 +104,7 @@ class ViewIndex {
 					<td style='width:5%;'>$ddm</td>
 					<td style='width:20%;'>$address</td>
 
-					<td style='width:4%;'><a href="/myorder/detail/$id"><small>详情</small></a><br><br> <a href="/myorder/edit/$id"><small>编辑</small></a></td>
+					<td style='width:4%;'><a href="/myorder/detail/$id"><small>详情</small></a><br><br> <a href="/myorder/edit/$id"><small>编辑</small></a><br><br/> <a href='/myorder/sendOrder?id=$id' ><small>发货</small></a></td>
 					</tr>
 					</table>
 					</div><!--/.well -->

@@ -15,8 +15,8 @@ class ViewMyOrderEdit {
 		}
 		$id = $datas['order']['_id'];
 		$name =$datas['order']['name'];
-		if($datas['order']['creattime'])
-			$date =date("Y-m-d H:i:s",$datas['order']['creattime']);
+		if($datas['order']['createtime'])
+			$date =date("Y-m-d H:i:s",$datas['order']['createtime']);
 		else
 			$date =date("Y-m-d H:i:s");
 		$phone = $datas['order']['phone'];

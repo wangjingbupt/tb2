@@ -57,7 +57,6 @@ class MyOrderModel{
 	{
 		$this->PostD->setCollection('myorder');
 	
-		$doc['status'] = 1;
 		
 		if($doc['_id'])
 		{
@@ -67,6 +66,7 @@ class MyOrderModel{
 		}
 		else
 		{
+			$doc['status'] = 1;
 			$sign = $this->PostD->insert($doc);
 		}
 
@@ -84,7 +84,8 @@ class MyOrderModel{
 		$res = array();
 		foreach($cursor as $doc)
 		{
-			$doc['_id'] = $doc['_id']->__toString();
+			if(isset($doc['_id']))
+				$doc['_id'] = $doc['_id']->__toString();
 			$res[] = $doc;
 		}
 		return $res;
@@ -92,7 +93,10 @@ class MyOrderModel{
 
 	public function mongoDoc2Array($doc)
 	{
-		$doc['_id'] = $doc['_id']->__toString();
+		if(isset($doc['_id']))
+		{
+			$doc['_id'] = $doc['_id']->__toString();
+		}
 		return $doc;	
 	}
 	

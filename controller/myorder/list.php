@@ -44,6 +44,7 @@ class MyOrderList extends control{
 			}
 			foreach($order['items'] as $id)
 			{
+				if(!in_array($id,$order['itemsOk']))
 				$order['itemsDetail'][] = $items[$id];
 			}
 			switch($order['status'])
