@@ -26,8 +26,16 @@ class ViewDetail {
 			$address = $datas['order']['address'];
 			$items = implode(',',$datas['order']['items']);
 			$comments = $datas['order']['comments'];
-			$dongdamenOrder = implode(',',$datas['order']['ddmOrder']);
-			$taobaoOrder = implode(',',$datas['order']['tbOrder']);
+			foreach($datas['order']['ddmOrder'] as $id)
+			{
+				$dongdamenOrder .= " <br/><a href='http://dongdamen.yiss.com/customer/myOrderView.html?key={$id}' target='_blank' >{$id}</a>";
+			}
+
+			foreach($datas['order']['tbOrder'] as $id)
+			{
+				$taobaoOrder .= " <br/><a href='http://trade.taobao.com/trade/detail/trade_item_detail.htm?bizOrderId={$id}' target='_blank' >{$id}</a>";
+			}
+
 			$tbname = $datas['order']['tbname'];
 			$status = $datas['order']['status'];
 

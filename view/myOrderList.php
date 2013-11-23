@@ -55,14 +55,15 @@ class ViewIndex {
 
 
 				$address ="<span class='text-info'>".$post['address']."</span>";
+				$address .="<span class='text-error'><br><br>电话：".$post['phone']."</span>";
 				if($post['comments'] !='')
-				$address .="<span class='text-error'><br><br>备注：".$post['comments']."</span>";
+				$address .="<span class='text-info'><br><br>备注：".$post['comments']."</span>";
 
 
 				foreach($post['itemsDetail'] as $item)
 				{
 					$item['img'] = str_replace('!small','!140.jpg',$item['img']);
-					$img .="<img src='{$item['img']}'>";
+					$img .="<a href='{$item['url']}' target='_blank'><img src='{$item['img']}'></a>";
 				}
 				$id = trim($post['_id']);
 				$name = $post['name'];
