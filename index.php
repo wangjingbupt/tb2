@@ -5,6 +5,11 @@ session_start();
 
 //print_r($_SESSION);
 //print_r($_COOKIE);
+$agent = 'UA_'. $_SERVER['HTTP_USER_AGENT'].' '.$_SERVER['HTTP_Q_UA'];
+if(strpos($agent, 'iPhone') || strpos($agent, 'Android') || strpos($agent, 'Adr '))
+{
+	$GLOBALS['UA_TYPE'] ='phone';
+}
 
 include('config/config.php');
 include('config/class.conf.php');
@@ -43,7 +48,9 @@ function dispatch()
 	{
 		include( ROOT."/controller/post/index.php");
 	}
+
 }
+
 dispatch();
 $_SESSION['REQUEST_URI'] = $_SERVER['REQUEST_URI'];
 

@@ -36,7 +36,14 @@ define('VIEW_WEIBO', VIEW."/weibo");
 define('VIEW_DUSTBIN', VIEW."/dustbin");
 
 //首页每页博文数
+if($GLOBALS['UA_TYPE'] == 'phone')
+{
+	define('POST_PAGE_NUM', 10);
+}
+else
+{
 define('POST_PAGE_NUM', 100);
+}
 
 
 

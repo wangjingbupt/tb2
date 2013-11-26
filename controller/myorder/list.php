@@ -42,10 +42,13 @@ class MyOrderList extends control{
 					$items[$t['id']] =$t ; 
 				}
 			}
+			if(!isset($order['itemsOk']))
+				$order['itemsOk'] = array();
 			foreach($order['items'] as $id)
 			{
 				if(!in_array($id,$order['itemsOk']))
-				$order['itemsDetail'][] = $items[$id];
+					$order['itemsDetail'][] = $items[$id];
+			
 			}
 			switch($order['status'])
 			{	

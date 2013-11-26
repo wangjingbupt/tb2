@@ -38,7 +38,15 @@ class PostList extends control{
 	{
 		$data['activeOrder'] = 'class="active"';
 		$GLOBALS['DATA'] = $data;
-		ViewIndex::render($datas);
+		if($GLOBALS['UA_TYPE'] == 'phone')
+		{
+			ViewIndex::renderPhone($datas);
+		}
+		else
+		{
+			ViewIndex::render($datas);
+
+		}
 		
 		
 		

@@ -73,7 +73,14 @@ class PostList extends control{
 		$data['activeWeibo'] = '';
 		$data['script'] = $this->getScript();
 		$GLOBALS['DATA'] = $data;
-		ViewIndex::render($datas);
+		if($GLOBALS['UA_TYPE'] == 'phone')
+		{
+			ViewIndex::renderPhone($datas);
+		}
+		else
+		{
+			ViewIndex::render($datas);
+		}
 		
 		
 		
