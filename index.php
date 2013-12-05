@@ -2,6 +2,7 @@
 //error_reporting(E_ALL);ini_set('display_errors',1);
 
 session_start();
+ini_set('date.timezone','Asia/Shanghai');
 
 //print_r($_SESSION);
 //print_r($_COOKIE);

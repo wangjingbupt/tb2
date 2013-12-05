@@ -57,12 +57,13 @@ class MyOrderModel{
 	{
 		$this->PostD->setCollection('myorder');
 	
+		if(!isset($doc['status']))
+			$doc['status'] = 1;
 		
 		if($doc['_id'])
 		{
 			$id = new MongoId($doc['_id']);
 			$doc['_id'] = $id;
-			$doc['status'] = 1;
 			$sign = $this->PostD->update(array('_id'=>$id), $doc);
 		}
 		else

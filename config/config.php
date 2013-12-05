@@ -38,7 +38,7 @@ define('VIEW_DUSTBIN', VIEW."/dustbin");
 //首页每页博文数
 if($GLOBALS['UA_TYPE'] == 'phone')
 {
-	define('POST_PAGE_NUM', 10);
+	define('POST_PAGE_NUM', 50);
 }
 else
 {
