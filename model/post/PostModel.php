@@ -23,6 +23,17 @@ class PostModel{
 		return self::mongoObj2Array($cursor);
 	}	
 	
+	public function getItem($id = 0)
+	{
+		$this->PostD->setCollection('items');
+
+		$where['status']=1;
+		$where['id']=strval($id);
+
+		$doc = $this->PostD->findOne($where);
+		
+		return self::mongoDoc2Array($doc);
+	}	
 	public function getPostCount($where = array())
 	{
 		$where['status']=1;
@@ -245,7 +256,8 @@ class PostModel{
 
 	public function mongoDoc2Array($doc)
 	{
-		$doc['_id'] = $doc['_id']->__toString();
+		if(isset($doc['_id']))
+			$doc['_id'] = $doc['_id']->__toString();
 		return $doc;	
 	}
 	

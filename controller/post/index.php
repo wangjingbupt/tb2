@@ -16,6 +16,14 @@ function postDispatch()
 			$className = 'PostAdd';
 			include(CONTROLLER_POST."/add.php");
 			break;
+		case 'data' :
+			$className = 'PostData';
+			include(CONTROLLER_POST."/data.php");
+			break;
+		case 'ask' :
+			$className = 'PostAsk';
+			include(CONTROLLER_POST."/ask.php");
+			break;
 		case 'edit' :
 			$className = 'PostEdit';
 			include(CONTROLLER_POST."/edit.php");

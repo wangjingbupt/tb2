@@ -64,7 +64,7 @@ while(1)
 			'url'=>$v,
 			);
 	}
-	if($serialNum * $size >= $all)
+	if($serialNum * $size >= $all || $serialNum * $size >=100)
 		break;
 	$serialNum++;
 }
@@ -85,11 +85,17 @@ foreach($orderList as &$order)
 	if($date !='')
 		$order['date'] = trim($date); 
 
+	preg_match('/<label>订单总额.*?<strong>.*?([0-9\.]+).*?<\/strong>/is',$output,$pri);
+	$order_price = $pri[1];
+	if($order_price != '')
+		$order['price'] = trim($order_price);
+
 	if(preg_match_all('/item-list(.*?)<\/table>/is',$output,$itemList))
 	{
 		foreach($itemList[1] as $itemLine)
 		{
-			if(preg_match_all('/img src=\"(.*?)\".*?<a href=\".*?relateId=(\d+)\".*?数量.*?<span>(.*?)<\/span>.*?状态.*?<span>(.*?)<\/span>/is',$itemLine,$m))
+			//if(preg_match_all('/img src=\"(.*?)\".*?<a href=\".*?relateId=(\d+)\".*?数量.*?<span>(.*?)<\/span>.*?状态.*?<span>(.*?)<\/span>/is',$itemLine,$m))
+			if(preg_match_all('/img src=\"(.*?)\".*?<a href=\".*?relateId=(\d+)\".*?class=\"price\".*?([0-9\.]+).*?数量.*?<span>(.*?)<\/span>.*?状态.*?<span>(.*?)<\/span>/is',$itemLine,$m))
 			{
 				
 				foreach($m[1] as $k=> $v)
@@ -99,8 +105,9 @@ foreach($orderList as &$order)
 						'img'=>$v,
 						'id'=>$m[2][$k],
 						'url'=>"http://dongdamen.yiss.com/styles/{$m[2][$k]}.html",
-						'num' => trim($m[3][$k]),
-						'status'=>trim($m[4][$k]),
+						'num' => trim($m[4][$k]),
+						'status'=>trim($m[5][$k]),
+						'price'=>trim($m[3][$k]),
 					));
 				}
 			}

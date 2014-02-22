@@ -30,7 +30,7 @@ abstract class control {
 	public function __construct() {
 		//检查链接是否跳转
 		$this->login();
-		if(!preg_match('/^\/add.php/',$_SERVER['REQUEST_URI']))
+		if(!preg_match('/^\/add.php/',$_SERVER['REQUEST_URI']) && !preg_match('/^\/data/',$_SERVER['REQUEST_URI']))
 		{
 			if($GLOBALS['LOGIN_DATA']['is_admin'] !=1 && $_SERVER['REQUEST_URI'] != '/login' )
 			{

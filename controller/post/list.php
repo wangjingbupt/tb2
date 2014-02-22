@@ -30,6 +30,7 @@ class PostList extends control{
 				$where['$or'] = array(
 						array('comments' => new MongoRegex("/{$arr[0]}/is")),
 						array('title' => new MongoRegex("/{$arr[0]}/is")),
+						array('id'=>$arr[0]),
 				);
 				
 			}

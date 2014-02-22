@@ -46,6 +46,20 @@ class PostAdd extends control{
 			$postModel->incFinderNum($data['createtime']);
 		}
 
+		$this->writeLog($item['id'],$item['img']);
+
+	}
+
+	public function writeLog($id,$img)
+	{
+		$path ='/home/erik/site/taobao/data/items/';
+		$file = $path .date('Ymd').".log";
+		$fp = fopen($file,'a+');
+		$i = explode('http://dimage.yissimg.com',$img);
+		$line = $id."\t".$i[1]."\n";
+		fwrite($fp,$line);
+		fclose($fp);
+
 	}
 
 
