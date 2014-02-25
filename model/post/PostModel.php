@@ -34,6 +34,7 @@ class PostModel{
 		
 		return self::mongoDoc2Array($doc);
 	}	
+
 	public function getPostCount($where = array())
 	{
 		$where['status']=1;

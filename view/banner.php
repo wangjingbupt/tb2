@@ -22,10 +22,17 @@ HTML;
 		}else if($GLOBALS['LOGIN_DATA']['is_admin']==1)
 		{
 			$login_data = $GLOBALS['LOGIN_DATA'];
+			if(isset($_COOKIE['booking']))
+			{
+				$cart = count(explode(',',$_COOKIE['booking']));
+			}
+			else
+				$cart = 0;
 			$login = '<div class="offset10" style="width:30%">';
 			$login .='
 			<div>
 			<ul class="nav nav-pills">
+				<li><a href="/cart">购物车('.$cart.')</a></li>
 			  <li><a href="#"><img src="'.$login_data['profileImg'].'" style="margin:auto 3px;width:20px;b"> <span style="color:#DDDDDD;font-weight:bold">'.$login_data['nickName'].'</span></a></li>
 			  <li class="dropdown">
 				    <a class="dropdown-toggle" data-toggle="dropdown" href="#">

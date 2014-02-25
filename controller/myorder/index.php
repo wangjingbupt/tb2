@@ -24,6 +24,10 @@ function postDispatch()
 			$className = 'MyOrderSendItem';
 			include(CONTROLLER_MYORDER."/sendItem.php");
 			break;
+		case 'confirmAddress' :
+			$className = 'MyOrderConfirmAddress';
+			include(CONTROLLER_MYORDER."/confirmAddress.php");
+			break;
 		case 'detail' :
 			$className = 'MyOrderDetail';
 			include(CONTROLLER_MYORDER."/detail.php");

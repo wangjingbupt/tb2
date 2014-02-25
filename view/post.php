@@ -32,7 +32,6 @@ public function post($post)
 							<td style='width:8%;'>$band</td>
 							<td style='width:5%;'>$myPrice</td>
 							<td style='width:6%;'>$pubtime</td>
-							<td style='width:8%;'>$comments</td>
 							<td style='width:7%;'><a href="/deletepost/$_id"><small>删除</small></a>
 						</tr>
 						</table>

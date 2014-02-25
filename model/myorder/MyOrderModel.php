@@ -53,6 +53,30 @@ class MyOrderModel{
 
 	}
 
+	public function getCustomerByPhone($phone_no)
+	{
+		$this->PostD->setCollection('customer');
+		$id = new MongoId($id);
+		$cursor = $this->PostD->find(array('phone'=>$phone_no));
+
+		return self::mongoObj2Array($cursor);
+
+	}
+
+	public function addAddress($doc)
+	{
+		$this->PostD->setCollection('customer');
+	
+		
+		$doc['status'] = 1;
+		$sign = $this->PostD->insert($doc);
+
+		if($sign)
+			return self::mongoDoc2Array($doc);
+
+		return false;
+	}
+
 	public function editPost($doc)
 	{
 		$this->PostD->setCollection('myorder');
@@ -76,9 +100,6 @@ class MyOrderModel{
 			return self::mongoDoc2Array($doc);
 
 		return false;
-
-
-
 	}
 
 	public function mongoObj2Array($cursor)
