@@ -77,6 +77,26 @@ class MyOrderModel{
 		return false;
 	}
 
+	public function updateDdmOrder($id,$ddmOrderId)
+	{
+		
+		$this->PostD->setCollection('myorder');
+		$_id =new MOngoId($id); 
+		$doc = $this->PostD->findOne(array('_id'=>$_id));
+		if(!$doc)
+		{
+			return false;
+		}
+		$doc['ddmOrder'] =array($ddmOrderId);
+
+		$sign = $this->PostD->update(array('_id'=>$_id), $doc);
+		if($sign)
+			return self::mongoDoc2Array($doc);
+
+		return false;
+
+	}
+
 	public function editPost($doc)
 	{
 		$this->PostD->setCollection('myorder');

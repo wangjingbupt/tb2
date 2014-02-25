@@ -5,12 +5,12 @@ class MyOrderConfirmAddress extends control{
 
 	public function checkPara(){
 
-		
+
 		$this->orderPhone = $_POST['phone']; 
 		$this->orderItems = $_POST['items']; 
 		$this->orderComments = $_POST['comments']; 
 		$this->orderTbOrder = $_POST['tbOrder']; 
-		
+
 		if($this->orderPhone == '' || $this->orderItems == '' )
 			return false;
 
@@ -21,7 +21,7 @@ class MyOrderConfirmAddress extends control{
 			$this->orderAddress = $_POST['address']; 
 			//$this->orderDdmOrder = $_POST['ddmOrder']; 
 			//$this->orderTbname = $_POST['tbname']; 
-		
+
 			if($this->orderName =='' || $this->orderAddress == '' )
 				return false;
 		}
@@ -32,18 +32,16 @@ class MyOrderConfirmAddress extends control{
 
 	public function action(){
 		
-
-
 		$postModel = new MyOrderModel();
 
 		if($_POST['newAddress'] == 0)
 		{
 			$address = array(
-				'name'=>$this->orderName,
-				'phone'=>$this->orderPhone,
-				'createtime'=> time(),
-				'address'=>$this->orderAddress,
-			);
+					'name'=>$this->orderName,
+					'phone'=>$this->orderPhone,
+					'createtime'=> time(),
+					'address'=>$this->orderAddress,
+					);
 			$address = $postModel->addAddress($address);
 
 		}
@@ -58,8 +56,6 @@ class MyOrderConfirmAddress extends control{
 
 		}
 
-		$items = explode(',',$this->orderItems);
-		$items =array_filter($items);
 
 		if( $this->orderTbOrder != '')
 		{
@@ -74,27 +70,41 @@ class MyOrderConfirmAddress extends control{
 			$tbOrder = array();
 		}
 
+		$items = explode(',',$this->orderItems);
+		$items =array_filter($items);
 
 		$doc = array(
-			'name'=>$this->orderName,
-			'phone'=>$this->orderPhone,
-			'createtime'=> time(),
-			'address'=>$this->orderAddress,
-			'items' =>$items,
-			'comments'=>$this->orderComments,
-			'tbOrder'=>$tbOrder,
-			'tbname'=>$this->orderTbname,
+				'name'=>$this->orderName,
+				'phone'=>$this->orderPhone,
+				'createtime'=> time(),
+				'address'=>$this->orderAddress,
+				'items' =>$items,
+				'comments'=>$this->orderComments,
+				'tbOrder'=>$tbOrder,
+				'tbname'=>$this->orderTbname,
 
-		);
+				);
 
-		if($this->orderId)
-		{
-			$doc['_id'] = $this->orderId;
-		}
 
 
 		$data = $postModel->editPost($doc);
-		
+
+
+		$postModel = new ScmOrderModel();
+		foreach($items  as $itemId)
+		{   
+			if(!isset($_POST["n_{$itemId}"]))
+				continue;
+			$item = array('id'=>$itemId);
+			$item['num'] =$_POST["n_{$itemId}"];
+			$item['comment'] = $_POST["c_{$itemId}"];
+			$item['addtime'] = time();
+			$item['myOrderId'] = $data['_id'];
+			$r = $postModel->addOrder($item);
+		}
+		setCookie('booking','',time()+3600*24,'/');
+
+
 		if($data)
 		{
 			$uri ="/myorder/detail/{$data['_id']}";
@@ -103,7 +113,7 @@ class MyOrderConfirmAddress extends control{
 		}
 		else
 		{
-			
+
 			include(VIEW.'/myOrderEdit.php');
 			$datas['order'] = $doc;
 			$data['activeMyOrder'] = 'class="active"';
@@ -118,6 +128,7 @@ class MyOrderConfirmAddress extends control{
 	public function includeFiles()
 	{
 
+		include(MODEL_SCMORDER."/ScmOrderModel.php");
 
 	}
 

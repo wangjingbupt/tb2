@@ -32,6 +32,14 @@ function postDispatch()
 			$className = 'MyOrderDetail';
 			include(CONTROLLER_MYORDER."/detail.php");
 			break;
+		case 'purchase' :
+			$className = 'MyOrderPurchase';
+			include(CONTROLLER_MYORDER."/purchase.php");
+			break;
+		case 'updatepurchase' :
+			$className = 'MyOrderUpdatePurchase';
+			include(CONTROLLER_MYORDER."/updatepurchase.php");
+			break;
 		default: 
 			$className = 'MyOrderList';
 			include(CONTROLLER_MYORDER."/list.php");

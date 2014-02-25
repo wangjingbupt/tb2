@@ -17,6 +17,7 @@ define('MODEL_DUSTBIN', MODEL."/dustbin");
 define('MODEL_LOGIN', MODEL."/login");
 define('MODEL_ORDER', MODEL."/order");
 define('MODEL_MYORDER', MODEL."/myorder");
+define('MODEL_SCMORDER', MODEL."/scmOrder");
 
 define('CONTROLLER_POST', CONTROLLER."/post");
 define('CONTROLLER_MYORDER', CONTROLLER."/myorder");

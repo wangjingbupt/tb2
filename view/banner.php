@@ -83,6 +83,7 @@ HTML;
               <li <?php echo $data['activeHome'];?>  ><a href="/" >商品</a></li>
               <li <?php echo $data['activeOrder'];?>  ><a href="/order" >东大门订单</a></li>
               <li <?php echo $data['activeMyOrder'];?>  ><a href="/myorder" >订单</a></li>
+              <li <?php echo $data['activePurchase'];?>  ><a href="/myorder/purchase" >采购列表</a></li>
             </ul>
           </div><!--/.nav-collapse -->
 					<?php echo $login; ?>

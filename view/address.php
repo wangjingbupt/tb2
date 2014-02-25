@@ -22,7 +22,7 @@ class ViewAddress {
 		}
 
 		$html .='<div class="well"><label class="radio"><input type="radio" name="newAddress" value="0" '.$radioCheck.' >新地址</label><span class="help-inline">顾客姓名: </span> &nbsp&nbsp<input class="input-small" name="name" type="text">&nbsp&nbsp&nbsp&nbsp&nbsp电话:&nbsp&nbsp&nbsp'.$this->phone_no.'<input type="hidden" name="phone" value="'.$this->phone_no.'" ></br><span class="help-inline">地址：</span>&nbsp&nbsp<input class="input-xxlarge" type="text" name="address" ></div>';
-		$html .='<div class="well"><span class="help-inline">备注：</span>&nbsp&nbsp<input class="input-xxlarge" type="text"  name="comments" ></br><span class="help-inline">淘宝订单链接：</span>&nbsp&nbsp<input class="input-xxlarge" name="tbOrder" type="text" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="hidden" name="items" value="'.$this->items.'" ><button class="btn btn-large btn-primary" type="submit">确定</button></form></div>';
+		$html .='<div class="well"><span class="help-inline">备注：</span>&nbsp&nbsp<input class="input-xxlarge" type="text"  name="comments" ></br><span class="help-inline">淘宝订单链接：</span>&nbsp&nbsp<input class="input-xxlarge" name="tbOrder" type="text" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="hidden" name="items" value="'.$this->items.'" ><button class="btn btn-large btn-primary" type="submit">确定</button></div>';
 
 		if(is_array($datas['post']) && !empty($datas['post']))
 		{
@@ -46,8 +46,8 @@ class ViewAddress {
 					<td style='width:7%;'>$id </br> $status</br><a href="$url" target='_blank'>链接地址</a></br>$price</br>$band</td>
 					<td style='width:15%;'>$title</td>
 					<td style='width:5%;'>$myPrice</td>
-					<td style='width:12%;'>数量: $num</td>
-					<td style='width:10%;'>备注: $comment</td>
+					<td style='width:12%;'>数量: $num <input type='hidden' name="n_$id" class="input-mini" value='$num' ></td>
+					<td style='width:10%;'>备注: $comment<input type='hidden' name="c_$id"  value="$comment" ></td>
 					</tr>
 					</table>
 					</div><!--/.well -->
@@ -56,7 +56,7 @@ HTML;
 
 			}
 		}
-		$html .='</div></div></div>';
+		$html .='</form></div></div></div>';
 		echo $html;
 		//include(VIEW.'/container.php');
 
