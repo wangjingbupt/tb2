@@ -9,7 +9,29 @@ class ViewIndex {
 		include(VIEW.'/header.php');
 		include(VIEW.'/banner.php');
 
+		$classConf = array(
+			1=>'未发货',
+			2=>'已取消',
+			3=>'已发货',
+		);
+
 		$html = '<div class="container"><div class="row-fluid"><div class="span12"><div class = "span12">';
+
+		$html .='<div class="navbar"><div class="navbar-inner"><a class="brand" href="#">分类</a><ul class="nav">';
+		if($this->cat =="")
+			$html .='<li class="active"><a href="/order">全部</a></li>';
+		else
+			$html .='<li><a href="/order">全部</a></li>';
+		foreach($classConf as $k => $v)
+		{
+			if($this->cat == $k )
+				$html .="<li class='active'><a href='/order?cat={$k}'>{$v}</a></li>";
+			else
+				$html .="<li><a href='/order?cat={$k}'>{$v}</a></li>";
+		}
+
+		$html .="</ul></div></div>";
+		$html .="<button class='btn'><a href='/myorder/edit'>New</a></button>";
 		$html .='<div><ul class="pager">';
 		if(isset($datas['hasPrev']))
 		{
@@ -34,6 +56,24 @@ class ViewIndex {
 				foreach($items as $item)
 				{
 					$item = json_decode($item,true);
+
+					if($this->cat == 1)
+					{
+						if($item['status'] == '已取消' || $item['status'] == '已发货')
+							continue;
+					}
+					else if($this->cat == 2)
+					{
+						if($item['status'] != '已取消')
+							continue;
+
+					}
+					else if($this->cat == 3)
+					{
+						if($item['status'] != '已发货')
+							continue;
+
+					}
 
 					if($item['status'] == '已取消')
 						$bg = 'background-color:#c0392b;';

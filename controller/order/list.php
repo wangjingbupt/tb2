@@ -6,6 +6,7 @@ class PostList extends control{
 	public function checkPara(){
 		
 		$this->page = isset($GLOBALS['URL_PATH'][2]) ?intval($GLOBALS['URL_PATH'][2]):0;
+		$this->cat = isset($_GET['cat']) ? trim($_GET['cat']):0;
 
 		return true;
 
@@ -13,6 +14,10 @@ class PostList extends control{
 
 	public function action(){
 		$postModel = new OrderModel();
+
+
+		$where = array();
+
 		$datas['post'] = $postModel->getPostList($this->page);
 		$postNum = $postModel->getPostCount();
 		if($postNum > POST_PAGE_NUM * ($this->page+1))

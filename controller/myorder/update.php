@@ -67,7 +67,7 @@ class MyOrderUpdate extends control{
 		
 		if($data)
 		{
-			$uri ="/myorder/detail/{$data['_id']}";
+			$uri ="/myorder";
 			header("Location: $uri");
 
 		}

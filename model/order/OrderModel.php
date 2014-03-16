@@ -9,13 +9,12 @@ class OrderModel{
 
 	}
 
-	public function getPostList($page=0)
+	public function getPostList($page=0,$where = array())
 	{
 		$this->PostD->setCollection('order');
 		$offset = $page * $this->_postLimit;
 
-		$cursor = $this->PostD->find(array());
-		//$cursor = $this->PostD->find(array("status" => new MongoRegex("/(已支付|已发货)/")));
+		$cursor = $this->PostD->find($where);
 		
 		$cursor->sort(array('id'=>-1))->skip($offset)->limit($this->_postLimit);
 		
