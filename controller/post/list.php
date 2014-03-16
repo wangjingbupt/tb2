@@ -5,9 +5,9 @@ class PostList extends control{
 
 	public function checkPara(){
 		
-		$this->page = intval($GLOBALS['URL_PATH'][1]);
-		$this->cat = trim($_GET['cat']);
-		$this->skey = trim($_GET['skey']);
+		$this->page =isset($GLOBALS['URL_PATH'][1]) ? intval($GLOBALS['URL_PATH'][1]) : 0;
+		$this->cat = isset($_GET['cat']) ? trim($_GET['cat']) : '';
+		$this->skey =isset($_GET['skey']) ? trim($_GET['skey']) : '';
 
 		return true;
 
@@ -15,6 +15,7 @@ class PostList extends control{
 
 	public function action(){
 		$postModel = new PostModel();
+		$where = array();
 		if($this->cat != '')
 		{
 			$where = array(
