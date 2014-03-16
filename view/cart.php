@@ -26,7 +26,7 @@ class ViewCart {
 					<table class="table table-bordered">
 					<tr style='$bg'>
 					<td style='width:10%;'><img src="$img"></td>
-					<td style='width:7%;'>$id </br> $status</br><a href="$url" target='_blank'>链接地址</a></br>$price</br>$band</td>
+					<td style='width:7%;'>$id </br><a href="$url" target='_blank'>链接地址</a></br>$price</td>
 					<td style='width:15%;'>$title</td>
 					<td style='width:5%;'>$myPrice</td>
 					<td style='width:12%;'>数量: &nbsp<input type='text' name="n_$id" class="input-mini" value='1' ></td>

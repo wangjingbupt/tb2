@@ -20,6 +20,7 @@ function getItems($db)
 {
 	$c = $db->selectCollection('items');
 	$items = $c->find(array('status'=>1));
+	$items->sort(array('createtime'=>-1))->limit(1500);
 	return mongoObj2Array($items);
 
 }
@@ -127,6 +128,7 @@ if(is_array($items) && !empty($items))
 
 		unset($item['_id']);
 		$ret = updateItem($db,$item['id'],$item);
+		echo $item['id']."\n";
 	}
 
 }
