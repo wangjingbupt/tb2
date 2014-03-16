@@ -78,6 +78,8 @@ class MyOrderConfirmAddress extends control{
 				'phone'=>$this->orderPhone,
 				'createtime'=> time(),
 				'address'=>$this->orderAddress,
+				'items' =>$items,
+				'comments'=>$this->orderComments,
 				'tbOrder'=>$tbOrder,
 				'tbname'=>$this->orderTbname,
 
