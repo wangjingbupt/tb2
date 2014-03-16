@@ -25,7 +25,7 @@ class MyOrderSend extends control{
 		}
 		$data = $postModel->editPost($data);
 		
-		$uri ="/myorder/detail/{$data['_id']}";
+		$uri ="/myorder";
 		header("Location: $uri");
 
 

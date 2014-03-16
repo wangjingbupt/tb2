@@ -70,14 +70,6 @@ HTML;
 				$address .="<span class='text-error'><br><br>电话：".$post['phone']."</span>";
 				if($post['comments'] !='')
 				$address .="<span class='text-info'><br><br>备注：".$post['comments']."</span>";
-				if( $post['status'] == '已发货')
-				{
-					$sendOrder = " ";
-				}
-				else
-				{
-					$sendOrder = "<a href='#myModal' class='btn btn-small btn-primary' role='button' data-toggle='modal' data-remote='/myorder/detail/$id' >发货</a>";
-				}	
 
 
 				if(!isset($post['itemsDetail']) || !is_array($post['itemsDetail']) || empty($post['itemsDetail']))
@@ -96,6 +88,16 @@ HTML;
 				$id = trim($post['_id']);
 				$name = $post['name'];
 				$status = $post['status'];
+
+				if( $post['status'] == '已发货')
+				{
+					$sendOrder = " ";
+				}
+				else
+				{
+					$sendOrder = "<a href='#myModal' class='btn btn-small btn-primary' role='button' data-toggle='modal' data-remote='/myorder/detail/$id' >发货</a>";
+				}	
+
 				if(date('Y',$post['createtime']) == date('Y'))
 					$status .='<br>'.date("m-d H:i",$post['createtime']);
 				else
