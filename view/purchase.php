@@ -15,6 +15,7 @@ class ViewPurchase {
 		//$html .='<li class="active"><a href="/myorder/purchase">待采购</a></li>';
 		//$html .="<li><a href='/myorder/purchase?purchased=1'>已采购</a></li>";
 		//$html .="</ul></div></div>";
+		$_ids = array();
 
 		if(is_array($datas['post']) && !empty($datas['post']))
 		{

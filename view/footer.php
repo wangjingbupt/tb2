@@ -20,7 +20,7 @@
     <script src="/assets/js/bootstrap-collapse.js"></script>
     <script src="/assets/js/bootstrap-carousel.js"></script>
     <script src="/assets/js/bootstrap-typeahead.js"></script>
-		<?php echo $data['script']?>
+		<?php if(isset($data['script']))echo $data['script']?>
 
   </body>
 </html>

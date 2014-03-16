@@ -5,9 +5,9 @@ class MyOrderList extends control{
 
 	public function checkPara(){
 		
-		$this->page = intval($GLOBALS['URL_PATH'][2]);
-		$this->cat = trim($_GET['cat']);
-		$this->skey = trim($_GET['skey']);
+		$this->page = isset($GLOBALS['URL_PATH'][2]) ? intval($GLOBALS['URL_PATH'][2]) :0;
+		$this->cat = isset($_GET['cat']) ? trim($_GET['cat']):0;
+		$this->skey = isset($_GET['skey'])?trim($_GET['skey']) :0;
 
 		return true;
 
@@ -36,10 +36,13 @@ class MyOrderList extends control{
 			foreach($order['ddmOrder'] as $oid)
 			{
 				$ddmOrder = $orderModel->getDetail($oid);
-				foreach($ddmOrder['items'] as $i_v)
+				if(is_array($ddmOrder['items']) && !empty($ddmOrder['items']))
 				{
-					$t = json_decode($i_v,true);
-					$items[$t['id']] =$t ; 
+					foreach($ddmOrder['items'] as $i_v)
+					{
+						$t = json_decode($i_v,true);
+						$items[$t['id']] =$t ; 
+					}
 				}
 			}
 			if(!isset($order['itemsOk']))

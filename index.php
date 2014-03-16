@@ -1,15 +1,27 @@
 <?php
-//error_reporting(E_ALL);ini_set('display_errors',1);
+error_reporting(E_ALL);ini_set('display_errors',1);
 
 session_start();
 ini_set('date.timezone','Asia/Shanghai');
 
 //print_r($_SESSION);
 //print_r($_COOKIE);
-$agent = 'UA_'. $_SERVER['HTTP_USER_AGENT'].' '.$_SERVER['HTTP_Q_UA'];
+if(isset($_SERVER['HTTP_Q_UA']))
+{
+	$agent = 'UA_'. $_SERVER['HTTP_USER_AGENT'].' '.$_SERVER['HTTP_Q_UA'];
+}
+else
+{
+	$agent = 'UA_'. $_SERVER['HTTP_USER_AGENT'];
+}
+
 if(strpos($agent, 'iPhone') || strpos($agent, 'Android') || strpos($agent, 'Adr '))
 {
 	$GLOBALS['UA_TYPE'] ='phone';
+}
+else
+{
+	$GLOBALS['UA_TYPE'] ='web';
 }
 
 include('config/config.php');
@@ -29,7 +41,8 @@ include(UTIL.'/instagram/Instagram.class.php');
 
 function dispatch()
 {
-	list($path,$params) = explode('?',ltrim($_SERVER['REQUEST_URI'],'/'),2);
+	$arr = explode('?',ltrim($_SERVER['REQUEST_URI'],'/'),2);
+	$path = $arr[0];
 	if($path == 'add.php')
 	{
 		$path = 'add';

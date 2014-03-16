@@ -60,7 +60,7 @@ class ViewIndex {
 				$address .="<span class='text-info'><br><br>备注：".$post['comments']."</span>";
 
 
-				if(!is_array($post['itemsDetail']) || empty($post['itemsDetail']))
+				if(!isset($post['itemsDetail']) || !is_array($post['itemsDetail']) || empty($post['itemsDetail']))
 					continue;
 				foreach($post['itemsDetail'] as $item)
 				{

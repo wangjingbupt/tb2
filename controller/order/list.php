@@ -5,7 +5,7 @@ class PostList extends control{
 
 	public function checkPara(){
 		
-		$this->page = intval($GLOBALS['URL_PATH'][2]);
+		$this->page = isset($GLOBALS['URL_PATH'][2]) ?intval($GLOBALS['URL_PATH'][2]):0;
 
 		return true;
 

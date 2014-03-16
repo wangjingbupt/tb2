@@ -5,7 +5,7 @@ include(MODEL_MYORDER."/MyOrderModel.php");
 
 function postDispatch()
 {
-	$ac = $GLOBALS['URL_PATH'][1];
+	$ac = isset($GLOBALS['URL_PATH'][1])? $GLOBALS['URL_PATH'][1] :'';
 
 	switch ($ac){
 		case 'edit' :
