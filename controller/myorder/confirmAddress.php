@@ -78,14 +78,10 @@ class MyOrderConfirmAddress extends control{
 				'phone'=>$this->orderPhone,
 				'createtime'=> time(),
 				'address'=>$this->orderAddress,
-				'items' =>$items,
-				'comments'=>$this->orderComments,
 				'tbOrder'=>$tbOrder,
 				'tbname'=>$this->orderTbname,
 
 				);
-
-
 
 		$data = $postModel->editPost($doc);
 
@@ -107,7 +103,7 @@ class MyOrderConfirmAddress extends control{
 
 		if($data)
 		{
-			$uri ="/myorder/detail/{$data['_id']}";
+			$uri ="/myorder";
 			header("Location: $uri");
 
 		}
