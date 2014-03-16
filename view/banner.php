@@ -32,7 +32,7 @@ HTML;
 			$login .='
 			<div>
 			<ul class="nav nav-pills">
-				<li><a href="/cart">购物车('.$cart.')</a></li>
+				<li id="cart" data-toggle="popover" data-placement="bottom" data-content="成功添加购物车" ><a href="/cart" >购物车('.$cart.')</a></li>
 			  <li><a href="#"><img src="'.$login_data['profileImg'].'" style="margin:auto 3px;width:20px;b"> <span style="color:#DDDDDD;font-weight:bold">'.$login_data['nickName'].'</span></a></li>
 			  <li class="dropdown">
 				    <a class="dropdown-toggle" data-toggle="dropdown" href="#">

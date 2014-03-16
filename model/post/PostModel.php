@@ -35,6 +35,24 @@ class PostModel{
 		return self::mongoDoc2Array($doc);
 	}	
 
+	public function getItemsByIds($ids)
+	{
+		$this->PostD->setCollection('items');
+		foreach($ids as &$id)
+		{
+			$id = strval($id);
+		}
+
+		$where['id']=array(
+			'$in'=>$ids,
+		);
+
+		$cursor = $this->PostD->find($where);
+		
+		return self::mongoObj2Array($cursor);
+
+	}
+
 	public function getPostCount($where = array())
 	{
 		$where['status']=1;

@@ -10,6 +10,7 @@ class ViewIndex {
 		include(VIEW.'/header.php');
 		include(VIEW.'/banner.php');
 
+
 		$html = '<div class="container"><div class="row-fluid"><div class="span10"><div class = "span12">';
 		$html .="<form class='form-search' action='/' method='GET'><input type='text' name = 'skey' class='input-medium search-query' value='{$this->skey}'><input type='hidden' name = 'cat' value = '{$this->cat}'> <button type='submit' class='btn'>Search</button></form>";
 		$html .='<div><ul class="pager">';

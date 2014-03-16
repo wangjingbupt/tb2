@@ -30,7 +30,7 @@ class PostBooking extends control{
 			setCookie('booking',implode(',',$booking),time()+3600*24,'/');
 
 		}
-		header('Location: '.$_SERVER['HTTP_REFERER']);
+		header('Location: /?addCart=succ');
 
 	}
 

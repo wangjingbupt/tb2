@@ -16,6 +16,7 @@ class MyOrderList extends control{
 	public function action(){
 		$postModel = new MyOrderModel();
 		$orderModel = new orderModel();
+		$itemModel = new PostModel();
 
 		$where = array();
 
@@ -32,7 +33,24 @@ class MyOrderList extends control{
 
 		foreach($datas['order'] as &$order )
 		{
-			$items = array();
+			if(!isset($order['items']))
+				continue;
+			$items = $itemModel->getItemsByIds($order['items']);
+			if(is_array($items) || !empty($items))
+			{
+				$temp = array();
+				foreach($items as $item)
+				{
+					$item['img'] = str_replace('!tall.jpg','!small',$item['img']);
+					$temp[$item['id']] = $item;	
+				}
+				$items = $temp;
+			}
+			else
+			{
+				$items = array();
+			}
+				
 			foreach($order['ddmOrder'] as $oid)
 			{
 				$ddmOrder = $orderModel->getDetail($oid);
@@ -41,7 +59,18 @@ class MyOrderList extends control{
 					foreach($ddmOrder['items'] as $i_v)
 					{
 						$t = json_decode($i_v,true);
-						$items[$t['id']] =$t ; 
+						if(!isset($items[$t['id']]))
+						{
+							$items[$t['id']] =$t ; 
+						}
+						else
+						{
+							$items[$t['id']]['num'] = $t['num'] ;
+							$items[$t['id']]['orderStatus'] = $t['status'] ;
+							$items[$t['id']]['price'] = $t['price'] ;
+
+						}
+
 					}
 				}
 			}
@@ -89,6 +118,7 @@ class MyOrderList extends control{
 
 		include(MODEL_ORDER."/OrderModel.php");
 		include(VIEW.'/myOrderList.php');
+		include(MODEL_POST."/PostModel.php");
 
 	}
 	

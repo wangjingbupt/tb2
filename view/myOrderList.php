@@ -29,6 +29,18 @@ class ViewIndex {
 		}
 		$html .="</ul></div></div>";
 		$html .="<button class='btn'><a href='/myorder/edit'>New</a></button>";
+		$html .=<<<HTML
+	 
+	 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	   <div class="modal-header">
+		     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				     <h3 id="myModalLabel">订单详情</h3>
+						   </div>
+							   <div class="modal-body">
+
+										   </div>
+																	 </div>
+HTML;
 		$html .='<div><ul class="pager">';
 		if(isset($datas['hasPrev']))
 		{
@@ -58,15 +70,29 @@ class ViewIndex {
 				$address .="<span class='text-error'><br><br>电话：".$post['phone']."</span>";
 				if($post['comments'] !='')
 				$address .="<span class='text-info'><br><br>备注：".$post['comments']."</span>";
+				if( $post['status'] == '已发货')
+				{
+					$sendOrder = " ";
+				}
+				else
+				{
+					$sendOrder = "<a href='#myModal' class='btn btn-small btn-primary' role='button' data-toggle='modal' data-remote='/myorder/detail/$id' >发货</a>";
+				}	
 
 
 				if(!isset($post['itemsDetail']) || !is_array($post['itemsDetail']) || empty($post['itemsDetail']))
 					continue;
+				$img ="<table border='0'><tr>";
+				$c = 1;
 				foreach($post['itemsDetail'] as $item)
 				{
+					$itemStatus = isset($item['orderStatus']) ? $item['orderStatus'] : '未订货';
 					$item['img'] = str_replace('!small','!140.jpg',$item['img']);
-					$img .="<a href='{$item['url']}' target='_blank'><img src='{$item['img']}'></a>";
+					$img .="<td style='width:10%;word-break:break-all; word-wrap:break-word;'><a href='{$item['url']}' target='_blank'><img src='{$item['img']}'></a></br>{$itemStatus}</td>";
+					if($c++%5 ==0)
+						$img .="</tr><tr>";
 				}
+				$img .="</tr></table>";
 				$id = trim($post['_id']);
 				$name = $post['name'];
 				$status = $post['status'];
@@ -101,15 +127,17 @@ class ViewIndex {
 					<table class="table table-bordered">
 					<tr style='$bg'>
 					<td style='width:12%;'>$status </td>
-					<td style='width:48%;'>$img</td>
+					<td style='width:46%;'>$img</td>
 					<td style='width:5%;'>$name</td>
 					<td style='width:5%;'>$ddm</td>
 					<td style='width:20%;'>$address</td>
 
-					<td style='width:4%;'><a href="/myorder/detail/$id"><small>详情</small></a><br><br> <a href="/myorder/edit/$id"><small>编辑</small></a><br><br/> <a href='/myorder/sendOrder?id=$id' ><small>发货</small></a></td>
+					<td style='width:6%;'><a href="/myorder/edit/$id"><small>编辑</small></a><br><br/> 
+					$sendOrder
+					</td>
 					</tr>
 					</table>
-					</div><!--/.well -->
+					</div><!--/.well href='/myorder/sendOrder?id=$id' -->
 
 HTML;
 
