@@ -4,6 +4,8 @@ include('loginDongdamen.php');
 
 function get($url,$header=array())
 {
+	
+	return request($url,array(),'GET',false,NULL,2,5,$header);
 	$ch = curl_init();
 	curl_setopt ($ch, CURLOPT_HEADER,0);
 
@@ -21,6 +23,7 @@ function get($url,$header=array())
 function post($url,$post=array(),$header=array())
 {
 
+	return request($url,$post,'POST',false,NULL,2,5,$header);
 	$ch = curl_init();
 	curl_setopt ($ch, CURLOPT_HEADER,1);
 
@@ -176,5 +179,62 @@ foreach($orderList as $order)
 
 }
 
+function request($url, $data = array(), $method  = 'GET', $isHttps = false, $cookie = NULL, $linkTime=1, $dealTime=1, $httpHeader= array())
+{
+
+	$ch = curl_init();
+	$curlOptions = array(
+			CURLOPT_URL				=>	$url,
+			CURLOPT_CONNECTTIMEOUT	=>	$linkTime,
+			CURLOPT_TIMEOUT			=>	$dealTime,
+			CURLOPT_RETURNTRANSFER	=>	true,
+			CURLOPT_HEADER			=>	false,
+			CURLOPT_FOLLOWLOCATION	=>	true,
+			CURLOPT_HTTPHEADER		=>  $httpHeader,
+			CURLOPT_USERAGENT => 'tingapi',
+			);
+
+	if($method === 'POST'){
+		$curlOptions[CURLOPT_POST] = true;
+	}
+	if($method === 'PUT'){
+		$curlOptions[CURLOPT_PUT] = true;
+	}
+
+	if('POST' === $method || 'PUT' === $method)
+	{
+		if(is_array($data))
+		{
+			$curlOptions[CURLOPT_POSTFIELDS] = http_build_query($data);
+		}else
+		{
+			$curlOptions[CURLOPT_POSTFIELDS] = $data;
+		}
+	}
+	if(true === $isHttps)
+	{
+		$curlOptions[CURLOPT_SSL_VERIFYPEER] = false;
+	}
+	if(isset($cookie))
+	{
+		$curlOptions[CURLOPT_COOKIE] = $cookie;
+	}
+	curl_setopt_array($ch, $curlOptions);
+	$response = curl_exec($ch);
+	$errno = curl_errno($ch);
+	if(0 != $errno)
+	{
+		header("Cache-Control:no-cache");
+		curl_close($ch);
+
+		$data['errno'] = $errno;
+
+		return false;
+	}
+
+	curl_close($ch);
+
+	return $response;
+}
 
 ?>
