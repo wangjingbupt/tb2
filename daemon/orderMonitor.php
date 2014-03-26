@@ -36,6 +36,7 @@ function post($url,$post=array(),$header=array())
 	return $output;
 
 }
+is_start();
 $serialNum=1;
 $size = 50;
 while(1)
@@ -64,7 +65,7 @@ while(1)
 			'url'=>$v,
 			);
 	}
-	if($serialNum * $size >= $all || $serialNum * $size >=100)
+	if($serialNum * $size >= $all || $serialNum * $size >=50)
 		break;
 	$serialNum++;
 }
@@ -113,6 +114,36 @@ foreach($orderList as &$order)
 			}
 		}
 	}
+}
+
+function is_start($key="",$file="")
+{
+	global  $argv ;
+	if ($key!= "")
+	{
+		$s = "ps auwwx | grep '". $argv[0] ." "  . $key  . "' | grep -v grep | grep -v vi | grep -v '/bin/sh' | wc -l";
+	}
+	else
+	{
+		$s = "ps auwwx | grep '". $argv[0] . "' | grep -v grep | grep -v vi | grep -v '/bin/sh' | wc -l";
+	}
+
+	$handle = popen($s, "r");
+	if($handle)
+	{
+		$num = fread($handle, 1024);
+	}
+	else
+	{
+		exit ;
+	}
+	pclose($handle);
+	if($num  > 1)
+	{
+		exit ;
+		return false ;
+	}
+	return true ;
 }
 
 include('../config/config.php');
