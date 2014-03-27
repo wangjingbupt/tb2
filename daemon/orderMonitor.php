@@ -68,7 +68,7 @@ while(1)
 			'url'=>$v,
 			);
 	}
-	if($serialNum * $size >= $all || $serialNum * $size >=50)
+	if($serialNum * $size >= $all || $serialNum * $size >=100)
 		break;
 	$serialNum++;
 }

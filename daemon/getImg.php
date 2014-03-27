@@ -24,7 +24,8 @@ while(($line = trim(fgets($fp))))
 		continue;
 	$url = 'http://dimage.yissimg.com'.$url;
 	$data = request($url,array(),'GET',false,NULL,3,10);
-	file_put_contents($imgFile,$data);
+	if($data)
+		file_put_contents($imgFile,$data);
 
 }
 
